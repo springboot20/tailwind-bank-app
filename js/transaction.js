@@ -19,7 +19,6 @@ addEventListener("load", () => {
 });
 
 let AllUserAccounts = [];
-let transactions = [];
 let transactionHistory = [];
 let balance = 0;
 
@@ -28,15 +27,6 @@ function getPreviousTransactionHistoryState() {
 	let currentUserTransactionHistory = JSON.parse(localStorage.getItem("users-accounts"))[ind]._transactionsHistory;
 	if (currentUserTransactionHistory) {
 		transactionHistory = currentUserTransactionHistory;
-	}
-}
-
-function getPreviousTransactionState() {
-	let ind = JSON.parse(localStorage.getItem("user-index"));
-	let currentUserTransaction = JSON.parse(localStorage.getItem("users-accounts"))[ind]
-		._transactions;
-	if (currentUserTransaction) {
-		transactions = currentUserTransaction;
 	}
 }
 
@@ -51,7 +41,6 @@ function getPreviousBalance() {
 
 addEventListener("load", () => {
 	getPreviousTransactionHistoryState();
-	getPreviousTransactionState();
 	getPreviousBalance();
 });
 
@@ -82,30 +71,12 @@ const setTransactionHistory = () => {
 	localStorage.setItem("users-accounts", JSON.stringify(AllUserAccounts));
 };
 
-
-const setTransactions = () => {
-
-	let ind = JSON.parse(localStorage.getItem("user-index"));
-	AllUserAccounts = JSON.parse(localStorage.getItem("users-accounts"));
-
-	transactions.push(Number(amount.value));
-	AllUserAccounts[ind]._transactions = transactions;
-	localStorage.setItem("users-accounts", JSON.stringify(AllUserAccounts));
-
-	console.log(transactions)
-}
-
 const setBalance = () => {
 	let ind = JSON.parse(localStorage.getItem('user-index'));
 	AllUserAccounts = JSON.parse(localStorage.getItem('users-accounts'));
 
-	let transactionAmount = JSON.parse(localStorage.getItem('users-accounts'))[ind]._transactions;
-
-	let newBalance = transactionAmount.reduce((balance, amount) => {
-		balance -= amount;
-		return balance;
-	})
-
+	let transactionAmount = JSON.parse(localStorage.getItem('users-accounts'))[ind]._balance
+	let newBalance = parseInt(transactionAmount) - parseInt(Number(amount.value))
 	balance = newBalance;
 	AllUserAccounts[ind]._balance = balance;
 	localStorage.setItem('users-accounts', JSON.stringify(AllUserAccounts));
@@ -119,7 +90,6 @@ transferForm.addEventListener("submit", (event) => {
 	event.preventDefault();
 
 	setTransactionHistory();
-	setTransactions();
 	setBalance();
 
 	setTimeout(() => {

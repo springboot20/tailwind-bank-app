@@ -8,18 +8,8 @@ import showMenu from "./helper.js"
 })();
 
 let AllUserAccounts = [];
-let transactionsIn = [];
 let transactionsInHistory = [];
 let balance = 0;
-
-function getPreviousTransactionIn() {
-	let ind = JSON.parse(localStorage.getItem("user-index"));
-	let currentUserTransactionIn = JSON.parse(localStorage.getItem("users-accounts"))[ind]
-		._transactionsIn;
-	if (currentUserTransactionIn) {
-		transactionsIn = currentUserTransactionIn;
-	}
-}
 
 function getPreviousTransactionInHistory() {
 	let ind = JSON.parse(localStorage.getItem("user-index"));
@@ -58,33 +48,15 @@ const setTransactionsInHistory = () => {
 	localStorage.setItem("users-accounts", JSON.stringify(AllUserAccounts));
 }
 
-const setTransactionsIn = () => {
-	let ind = JSON.parse(localStorage.getItem("user-index"));
-	AllUserAccounts = JSON.parse(localStorage.getItem("users-accounts"));
-
-	transactionsIn.push(Number(amount.value));
-	AllUserAccounts[ind]._transactionsIn = transactionsIn;
-	localStorage.setItem("users-accounts", JSON.stringify(AllUserAccounts));
-
-	console.log(transactionsIn)
-}
-
 const setBalance = () => {
 	let ind = JSON.parse(localStorage.getItem('user-index'));
 	AllUserAccounts = JSON.parse(localStorage.getItem('users-accounts'));
 
-	let transactionAmount = JSON.parse(localStorage.getItem('users-accounts'))[ind]._transactionsIn;
-	console.log(transactionAmount);
-
-	let newBalance = transactionAmount.reduce((balance, amount) => {
-		balance += amount;
-		return balance;
-	})
-
-	console.log(newBalance);
+	let transactionAmount = JSON.parse(localStorage.getItem('users-accounts'))[ind]._balance;
+	let newBalance = parseInt(transactionAmount) + parseInt(Number(amount.value))
 
 	balance = newBalance;
-	AllUserAccounts[ind]._balance = balance;
+	AllUserAccounts[ind]._balance += balance;
 	localStorage.setItem('users-accounts', JSON.stringify(AllUserAccounts));
 
 	console.log(transactionAmount);
@@ -96,7 +68,6 @@ document.querySelector('form').addEventListener('submit', (event) => {
 	event.preventDefault();
 
 	setTransactionsInHistory();
-	setTransactionsIn();
 	setBalance();
 
 	setTimeout(() => {
@@ -106,8 +77,6 @@ document.querySelector('form').addEventListener('submit', (event) => {
 
 window.addEventListener('load', () => {
 	document.body.classList.add('loaded');
-
-	getPreviousTransactionIn();
 	getPreviousBalance();
 	getPreviousTransactionInHistory();
 })

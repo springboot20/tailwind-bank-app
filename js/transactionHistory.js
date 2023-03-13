@@ -31,7 +31,7 @@ function setTransactionHistory() {
 			</div>
 			<p class="transaction-source font-bold "> Source : <span class="text-gray-500">${history.bankName}</span> </p>
 			<div class="amount-container">
-				<p class="amount-transfered text-gray-600 font-semibold">+ ${formatNaira.format(Number(history.amount))}</p>
+				<p class="amount-transfered text-red-600 font-semibold"> - ${formatNaira.format(Number(history.amount))}</p>
 			</div>
 		</div>
 		`
