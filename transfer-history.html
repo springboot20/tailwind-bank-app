@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="./img/piggy-bank.svg" type="image/x-icon" />
 	<script src="https://kit.fontawesome.com/643f8e5097.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.min.css">
 	<link rel="stylesheet" href="./css/styles.css">
 	<title>Piggy Bank</title>
 </head>
@@ -48,12 +49,19 @@
 							</a>
 							<span class="tooltip">Home</span>
 						</li>
-						<li class="nav-item dropdown">
+						<li class="nav-item">
 							<a href="./transaction.html" class="nav-link" id="drop-down">
 								<span class="fas fa-list menu-icon"></span>
 								<span class="link-name">Trasnsactions</span>
 							</a>
 							<span class="tooltip">Transaction</span>
+						</li>
+						<li class="nav-item">
+							<a href="./transfer-history.html" class="nav-link">
+								<span class="fas fa-list menu-icon"></span>
+								<span class="link-name">Trasnsaction History</span>
+							</a>
+							<span class="tooltip">History</span>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link">
@@ -104,9 +112,10 @@
 				</div>
 			</nav>
 			<!-- MAIN CONTENT MARKUP -->
-			<section class="transfer-container" id="transfer-container">
-				<div class="container">
-
+			<section class="transfer-container absolute top-20 min-w-full" id="transfer-container">
+				<div class="container mx-auto mt-2 p-4 max-w-[90rem]">
+					<div class="transactions-container ">
+					</div>
 				</div>
 			</section>
 		</main>

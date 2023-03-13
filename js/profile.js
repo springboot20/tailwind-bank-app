@@ -9,7 +9,7 @@ const lastName = document.querySelector('.last');
 const emailAddress = document.querySelector('.email');
 const balance = document.querySelector('.balance');
 
-const formatDollar = new Intl.NumberFormat("en-NG", {
+const formatNaira = new Intl.NumberFormat("en-NG", {
 	currency: "NGN",
 	style: "currency",
 })
@@ -21,7 +21,7 @@ function setprofile() {
 	firstName.textContent = `${profile[ind].firstName}`;
 	lastName.textContent = `${profile[ind].lastName}`;
 	emailAddress.textContent = `${profile[ind].emailAddress}`;
-	balance.textContent = formatDollar.format(`${Number(profile[ind]._balance)}`)
+	balance.textContent = formatNaira.format(`${Number(profile[ind]._balance)}`)
 
 	console.log(ind, profile)
 }

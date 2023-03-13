@@ -71,6 +71,7 @@ const setTransactionHistory = () => {
 		accountName: accountname.value,
 		accountNumber: accountnumber.value,
 		amount: Number(amount.value),
+		time: new Date().toLocaleString()
 	};
 
 	let ind = JSON.parse(localStorage.getItem("user-index"));

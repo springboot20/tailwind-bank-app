@@ -52,7 +52,8 @@ const signUp = (event) => {
 		confirmPass: confirmPassword.value,
 		_transactions: [],
 		_transactionsHistory: [],
-		_balance: 0
+		_balance: 0,
+		time: new Date().toLocaleString()
 	};
 
 	setTimeout(() => {
