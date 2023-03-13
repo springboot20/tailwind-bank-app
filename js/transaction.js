@@ -45,7 +45,7 @@ function getPreviousBalance() {
 	let currentUserBalance = JSON.parse(localStorage.getItem("users-accounts"))[ind]
 		._balance;
 	if (currentUserBalance) {
-		balance += currentUserBalance;
+		balance = currentUserBalance;
 	}
 }
 
@@ -107,7 +107,7 @@ const setBalance = () => {
 	})
 
 	balance = newBalance;
-	AllUserAccounts[ind]._balance += balance;
+	AllUserAccounts[ind]._balance = balance;
 	localStorage.setItem('users-accounts', JSON.stringify(AllUserAccounts));
 
 	console.log(transactionAmount);
@@ -122,6 +122,8 @@ transferForm.addEventListener("submit", (event) => {
 	setTransactions();
 	setBalance();
 
-	window.location.href = transferForm.getAttribute('action');
+	setTimeout(() => {
+		window.location.href = transferForm.getAttribute('action');
+	}, 2500)
 	console.log(AllUserAccounts);
 });

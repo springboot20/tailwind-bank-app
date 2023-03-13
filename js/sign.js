@@ -51,6 +51,8 @@ const signUp = (event) => {
 		password: passWord.value,
 		confirmPass: confirmPassword.value,
 		_transactions: [],
+		_transactionsIn: [],
+		_transactionsInHistory: [],
 		_transactionsHistory: [],
 		_balance: 0,
 		time: new Date().toLocaleString()

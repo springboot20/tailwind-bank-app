@@ -89,5 +89,4 @@ const signIn = (event) => {
 signForm.addEventListener("submit", (event) => {
 	console.log(AllUserAccounts);
 	signIn(event);
-
 });

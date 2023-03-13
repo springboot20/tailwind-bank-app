@@ -125,8 +125,8 @@
 							<form id="transaction-form" action="app.html">
 								<div class="transfer-field">
 									<div class="form-group">
-										<label for="bank-name" class="form-label">Bank Name</label>
-										<select name="bank-name" id="bank-name" class="form-control">
+										<label for="source-name" class="form-label">Source Name</label>
+										<select name="source-name" id="source-name" class="form-control">
 											<option value="">Please select a bank</option>
 											<option value="UBA">UBA</option>
 											<option value="First Bank">First Bank</option>
@@ -137,22 +137,6 @@
 										</select>
 									</div>
 									<small class="error error-txt">Please select a bank</small>
-								</div>
-								<div class="transfer-field">
-									<div class="form-group">
-										<label for="account-number" class="form-label">Account Number</label>
-										<input type="text" name="account-number" id="account-number" class="form-control"
-											placeholder="enter account number" />
-									</div>
-									<small class="error error-txt">enter an account number</small>
-								</div>
-								<div class="transfer-field">
-									<div class="form-group">
-										<label for="account-name" class="form-label">Account Name</label>
-										<input type="text" name="account-name" id="account-name" class="form-control"
-											placeholder="enter account name" />
-									</div>
-									<small class="error error-txt">enter an account name</small>
 								</div>
 								<div class="transfer-field">
 									<div class="form-group">
@@ -182,7 +166,7 @@
 		</main>
 	</div>
 
-	<script type="module" src="./js/transaction.js"></script>
+	<script type="module" src="./js/transactionIn.js"></script>
 </body>
 
 </html>
