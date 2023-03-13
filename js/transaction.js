@@ -102,7 +102,7 @@ const setBalance = () => {
 	let transactionAmount = JSON.parse(localStorage.getItem('users-accounts'))[ind]._transactions;
 
 	let newBalance = transactionAmount.reduce((balance, amount) => {
-		balance += amount;
+		balance -= amount;
 		return balance;
 	})
 
