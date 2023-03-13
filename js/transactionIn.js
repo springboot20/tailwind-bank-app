@@ -100,7 +100,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
 	setBalance();
 
 	setTimeout(() => {
-		window.location.href = transferForm.getAttribute('action');
+		window.location.href = document.querySelector('form').getAttribute('action');
 	}, 2500)
 })
 
