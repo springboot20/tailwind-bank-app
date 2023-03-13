@@ -7,8 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="./img/piggy-bank.svg" type="image/x-icon" />
 	<script src="https://kit.fontawesome.com/643f8e5097.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="./css/app.css" />
-	<link rel="stylesheet" href="./css/trasnfer.css" />
+	<link rel="stylesheet" href="./css/styles.css">
 	<title>Piggy Bank</title>
 </head>
 
@@ -35,97 +34,85 @@
 					</div>
 
 					<ul class="nav-menu" id="menu" aria-labelledby="menu">
+						<li class="nav-item box">
+							<div class="search-box">
+								<span class="fas fa-search search-icon"></span>
+								<input type="search" placeholder="Search here......" />
+							</div>
+							<span class="tooltip">Search</span>
+						</li>
 						<li class="nav-item">
 							<a href="./app.html" class="nav-link active-link dropBtn">
 								<span class="fas fa-home menu-icon"></span>
 								<span class="link-name">Home</span>
 							</a>
+							<span class="tooltip">Home</span>
 						</li>
 						<li class="nav-item dropdown">
-							<div class="sub-div">
-								<a href="./transaction.html" class="nav-link" id="drop-down">
-									<span class="fas fa-list menu-icon"></span>
-									<span class="link-name">Trasnsactions</span>
-								</a>
-								<span class="fa fa-plus drop-icon"></span>
-							</div>
-
-							<!-- DROPDOWN MARKUP -->
-
-							<ul class="dropdown-menu" id="dropMenu">
-								<li class="drop-item">
-									<a href="./transfer.html" class="dropdown-link">Transfer</a>
-								</li>
-								<li class="drop-item">
-									<a href="#" class="dropdown-link">Deposite</a>
-								</li>
-								<li class="drop-item">
-									<a href="#" class="dropdown-link">Airtime Service</a>
-								</li>
-							</ul>
+							<a href="./transaction.html" class="nav-link" id="drop-down">
+								<span class="fas fa-list menu-icon"></span>
+								<span class="link-name">Trasnsactions</span>
+							</a>
+							<span class="tooltip">Transaction</span>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link">
 								<span class="fas fa-wallet menu-icon"></span>
 								<span class="link-name">Wallet</span>
 							</a>
+							<span class="tooltip">Wallet</span>
 						</li>
 						<li class="nav-item">
-							<a href="card.html" class="nav-link">
-								<span class="far fa-credit-card menu-icon"></span>
-								<span class="link-name">Card</span>
+							<a href="profile.html" class="nav-link">
+								<span class="far fa-user menu-icon"></span>
+								<span class="link-name">Profile</span>
 							</a>
+							<span class="tooltip">Profile</span>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link">
 								<span class="fas fa-sliders menu-icon"></span>
 								<span class="link-name">Settings</span>
 							</a>
+							<span class="tooltip">Setiings</span>
 						</li>
 					</ul>
-					<span class="fas fa-xmark close-icon"></span>
-
-					<ul class="log-out">
-						<li class="log-out-container">
+					<span class="fa fa-angle-right show-icon"></span>
+					<div class="log-out relative">
+						<div class="log-out-container">
 							<a href="./signIn.html" target="_blank" id="logBtn">
 								<span class="fas fa-arrow-right-from-bracket"></span>
 								<span class="log-out-label">Logout</span>
 							</a>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</nav>
 
-		<main class="main">
-			<div class="hero-container">
-				<nav class="app-navigation">
-					<div class="nav-container">
-						<div class="nav-logo">
-							<span class="fa fa-piggy-bank"></span>
-							<span class="logo-name">Piggy Bank</span>
-						</div>
-
-						<div class="notification-container">
-							<span class="fas fa-bell notification-icon"></span>
-							<button type="button" class="btn">
-								<span class="fas fa-bars" id="open-btn"></span>
-							</button>
-						</div>
+		<main class="main-section">
+			<nav class="app-navigation">
+				<div class="nav-container">
+					<div class="nav-logo">
+						<span class="fa fa-piggy-bank"></span>
+						<span class="logo-name">Piggy Bank</span>
 					</div>
-				</nav>9
 
-				<!-- MAIN CONTENT MARKUP -->
-				<section class="transfer-container" id="transfer-container">
-					<div class="container">
-
+					<div class="notification-container">
+						<span class="fas fa-bell notification-icon"></span>
 					</div>
-				</section>
-			</div>
+				</div>
+			</nav>
+			<!-- MAIN CONTENT MARKUP -->
+			<section class="transfer-container" id="transfer-container">
+				<div class="container">
+
+				</div>
+			</section>
 		</main>
 	</div>
 
-	<script type="module" src="./js/transaction.js"></script>
+	<script type="module" src="./js/transactionHisory.js"></script>
 </body>
 
 </html>
