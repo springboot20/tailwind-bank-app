@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/piggy-bank.svg" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/643f8e5097.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Piggy Bank | Sign Up Page</title>
+</head>
+
+<body class="grid justify-center items-center min-h-screen">
+  <div class="main-container">
+    <div class="header">
+      <h1 class="main-title">Create account</h1>
+    </div>
+    <div class="form-container">
+      <h2 class="form-title">Welcome</h2>
+      <p class="form-text">Hello there, sign up to continue</p>
+      <form action="./signIn.html">
+        <div class="flex-field">
+          <div class="field firstname">
+            <label for="username">Fisrtname</label>
+            <div class="input-container">
+              <input type="text" placeholder="Enter your First name here..." id="firstname">
+              <span class="fa fa-circle-check valid-icon valid"></span>
+              <span class="error fa fa-exclamation-circle error-icon"></span>
+            </div>
+            <small class="error error-txt">Fisrtname cannot be blank</small>
+          </div>
+
+          <div class="field lastname">
+            <label for="username">Lastname</label>
+            <div class="input-container">
+              <input type="text" placeholder="Enter your First name here..." id="lastname">
+              <span class="fa fa-circle-check valid-icon valid"></span>
+              <span class="error fa fa-exclamation-circle error-icon"></span>
+            </div>
+            <small class="error error-txt">Lastname cannot be blank</small>
+          </div>
+        </div>
+
+        <div class="field email">
+          <label for="email">Email</label>
+          <div class="input-container">
+            <input type="email" placeholder="Enter your email address here..." id="email">
+            <span class="fa fa-circle-check valid-icon valid"></span>
+            <span class="error fa fa-exclamation-circle error-icon"></span>
+          </div>
+          <small class="error error-txt">Email cannot be blank</small>
+        </div>
+
+        <div class="field password">
+          <label for="password">Password</label>
+          <div class="input-container">
+            <input type="password" placeholder="Enter your password here..." id="password"
+              autocomplete="current-password">
+            <span class="fa fa-circle-check valid-icon valid"></span>
+            <span class="error fa fa-exclamation-circle error-icon"></span>
+          </div>
+          <small class="error error-txt">password cannot be blank</small>
+        </div>
+
+        <div class="field confirm-password">
+          <label for="confirm-password">Confirm Password</label>
+          <div class="input-container">
+            <input type="password" placeholder="Re-enter your password here..." id="confirm-password"
+              autocomplete="current-password">
+            <span class="fa fa-circle-check valid-icon valid"></span>
+            <span class="error fa fa-exclamation-circle error-icon"></span>
+          </div>
+          <small class="error error-txt">Confirm password cannot be blank</small>
+        </div>
+        <button type="submit" class="btn sign-up-Btn" id="sign-up-btn">Sign up</button>
+        <p class="">Already have an account ?
+          <a href="./signIn.html">Sign in</a>
+        </p>
+      </form>
+    </div>
+  </div>
+  <script type="module" src="./js/sign.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./img/piggy-bank.svg" type="image/x-icon" />
+	<script src="https://kit.fontawesome.com/643f8e5097.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./css/styles.css">
+	<title>Piggy Bank | Home Page</title>
+</head>
+
+<body class="min-h-screen">
+	<div class="wrapper-container flex flex-col gap-9 px-8 min-h-screen">
+		<nav
+			class="navigation fixed flex left-0 right-0 justify-between items-center w-full bg-white px-4 md:px-10 h-20 z-10">
+			<a class="nav-logo inline-flex items-center flex-shrink-0">
+				<span class="fa fa-piggy-bank text-4xl font-extrabold text-[#444bd3]"></span>
+				<span class="logo-name text-[1.65em]">Piggy Bank</span>
+			</a>
+			<div class="nav-bar-container">
+				<ul class="nav-menu space-y-12 fixed top-0 right-0 left-0 min-h-screen p-6 bg-blue-500 lg:bg-transparent text-white font-semibold text-2xl transform -translate-x-full transition-all
+							 lg:relative
+							  lg:flex
+								lg:items-center
+								lg:justify-center
+								lg:space-y-0
+								lg:space-x-10
+							 lg:min-h-0
+							 lg:mt-0
+							 lg:text-[#121127]
+							 lg:translate-x-0 md:bg-none" id="menu" aria-labelledby="menu">
+					<li class="nav-items">
+						<a href="#" class="nav-links active-link dropBtn">
+							<span class="link-name">Home</span>
+						</a>
+					</li>
+					<li class="nav-items">
+						<a href="#" class="nav-links">
+							<span class="link-name">Products</span>
+						</a>
+					</li>
+					<li class="nav-items">
+						<a href="#" class="nav-link">
+							<span class="link-name">Solutions</span>
+						</a>
+					</li>
+					<li class="nav-items">
+						<a href="#" class="nav-links">
+							<span class="link-name">Developer</span>
+						</a>
+					</li>
+					<li class="nav-items">
+						<a href="#" class="nav-links dropBtn">
+							<span class="link-name">Pricing</span>
+						</a>
+					</li>
+					<li class="nav-action flex flex-shrink-0 gap-4 flex-col items-start text-left lg:items-center lg:flex-row">
+						<a href="./signIn.html" class="btn sign text-white lg:text-[#121127]">Sign In</a>
+						<a href="signup.html"
+							class="btn btn-primary ring-2 ring-offset-1 hover:bg-indigo-500 transition-all ring-indigo-400">Sign
+							Up</a>
+					</li>
+					<span class="fas fa-xmark close-icon absolute z-10 text-white text-3xl top-0 right-8"></span>
+				</ul>
+				<div class="notification-container flex flex-shrink-0 text-[#121127] text-3xl lg:hidden">
+					<span class="fas fa-bars" id="open-btn"></span>
+				</div>
+			</div>
+		</nav>
+
+		<section class="section-hero relative top-20 p-3">
+			<div class="container max-w-screen-2xl mx-auto">
+				<div class="hero-container grid md:grid-cols-2 items-center">
+					<div class="hero-content">
+						<h1 class="heading text-6xl font-bold leading-[3.5rem] text-[#121127] sm:leading-[4.5rem]">
+							Design is intelligence made visible.
+						</h1>
+						<p class="paragraph sm:my-10">
+							Accepts payments and move money globally with Stripe's powerful APIs and software solutions designed to
+							help
+							you capture more revenue.
+						</p>
+						<div class="hero-links flex space-x-2 mt-8">
+							<a href="#"
+								class="btn btn-primary ring-2 ring-offset-1 hover:bg-indigo-500 transition-all ring-indigo-400">Start
+								Now</a>
+							<a href="#" class="btn btn-outline">Contact Sales</a>
+						</div>
+					</div>
+					<div class="hero-image w-full h-full">
+						<img src="./img/piggy-01.png" alt="piggy image">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="features" class="max-w-full mt-32 ">
+			<div class="mx-auto container p-4 max-w-screen-2xl">
+				<div class="features-container grid md:grid-cols-2 space-y-8 md:space-y-0 md:space-x-4">
+					<div
+						class="features-item flex flex-row space-x-4 bg-white rounded-md shadow-lg w-full h-auto md:h-auto lg:h-60 p-4">
+						<div>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#11cdd1" class="h-16 w-16">
+								<path
+									d="M400 96l0 .7c-5.3-.4-10.6-.7-16-.7H256c-16.5 0-32.5 2.1-47.8 6c-.1-2-.2-4-.2-6c0-53 43-96 96-96s96 43 96 96zm-16 32c3.5 0 7 .1 10.4 .3c4.2 .3 8.4 .7 12.6 1.3C424.6 109.1 450.8 96 480 96h32l-18.8 75.1c15.8 14.8 28.7 32.8 37.5 52.9H544c17.7 0 32 14.3 32 32v96c0 17.7-14.3 32-32 32H512c-9.1 12.1-19.9 22.9-32 32v64c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H256v32c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32V416c-34.9-26.2-58.7-66.3-63.2-112H68c-37.6 0-68-30.4-68-68s30.4-68 68-68h4c13.3 0 24 10.7 24 24s-10.7 24-24 24H68c-11 0-20 9-20 20s9 20 20 20H99.2c12.1-59.8 57.7-107.5 116.3-122.8c12.9-3.4 26.5-5.2 40.5-5.2H384zm64 136c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24z" />
+							</svg>
+						</div>
+						<div class="features-item-content">
+							<h3 class="features-item-heading text-3xl font-semibold">
+								Optimize your revenue
+							</h3>
+							<p class="paragraph">
+								Protect yourself from fraud and increase authorization rates on every payment using our machines learnin
+								and data from millions of businesses.
+							</p>
+							<a href="#"
+								class="btn-secondary btn mt-4 lg:mt-8 bg-indigo-700 text-white ring-2 ring-indigo-400 hover:bg-indigo-600 hover:ring-indigo-400 rounded-lg transition-all ring-offset-1">Read
+								more</a>
+						</div>
+					</div>
+					<div
+						class="features-item flex flex-row space-x-4 bg-white rounded-md shadow-lg w-full h-auto md:h-auto lg:h-60 p-4">
+						<div>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#11cdd1" class="h-16 w-16">
+								<path
+									d="M400 96l0 .7c-5.3-.4-10.6-.7-16-.7H256c-16.5 0-32.5 2.1-47.8 6c-.1-2-.2-4-.2-6c0-53 43-96 96-96s96 43 96 96zm-16 32c3.5 0 7 .1 10.4 .3c4.2 .3 8.4 .7 12.6 1.3C424.6 109.1 450.8 96 480 96h32l-18.8 75.1c15.8 14.8 28.7 32.8 37.5 52.9H544c17.7 0 32 14.3 32 32v96c0 17.7-14.3 32-32 32H512c-9.1 12.1-19.9 22.9-32 32v64c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H256v32c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32V416c-34.9-26.2-58.7-66.3-63.2-112H68c-37.6 0-68-30.4-68-68s30.4-68 68-68h4c13.3 0 24 10.7 24 24s-10.7 24-24 24H68c-11 0-20 9-20 20s9 20 20 20H99.2c12.1-59.8 57.7-107.5 116.3-122.8c12.9-3.4 26.5-5.2 40.5-5.2H384zm64 136c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24z" />
+							</svg>
+						</div>
+						<div class="features-item-content">
+							<h3 class="features-item-heading text-3xl font-semibold">Payments for any business</h3>
+							<p class="paragraph">
+								From ecommerce stores, to subscription businesses, to platforms and marketplaces, we offer a complete
+								stack of all your payments needs across channels.
+							</p>
+							<a href="#"
+								class="btn-secondary btn mt-4 lg:mt-8 bg-indigo-700 text-white ring-2 ring-indigo-400 hover:bg-indigo-600 hover:ring-indigo-400 rounded-lg transition-all ring-offset-1">Read
+								more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer mt-auto py-6 flex justify-between items-center">
+			<p class="text-sm text-gray-500 text-center">
+				<strong class="text-xl">&copy; Copyright 2023</strong>
+				<small class="text-2zxl font-semibold">Springboot</small>
+			</p>
+
+			<ul class="social-links flex gap-5">
+				<li class="social-item">
+					<a href="https://github.com/springboot18" target="_blank" rel="noopener" class="social-link">
+						<span class="fab fa-github social-icon"></span>
+					</a>
+				</li>
+				<li class="social-item">
+					<a href="#" target="_blank" rel="noopener" class="social-link">
+						<span class="fab fa-linkedin social-icon"></span>
+					</a>
+				</li>
+				<li class="social-item">
+					<a href="#" target="_blank" rel="noopener" class="social-link">
+						<span class="fab fa-facebook social-icon"></span>
+					</a>
+				</li>
+				<li class="social-item">
+					<a href="tel:07086807968" target="_blank" rel="noopener" class="social-link">
+						<span class="fab fa-whatsapp social-icon"></span>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+
+	<script type="module" src="./js/index.js"></script>
+</body>
+
+</html>

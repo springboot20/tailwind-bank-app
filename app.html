@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/piggy-bank.svg" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/643f8e5097.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Piggy Bank</title>
+</head>
+
+<body>
+  <div id="loader">
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <div class="App-container relative" id="root">
+    <nav class="navigation" id="navigation">
+      <div class="container navigation-container">
+        <div class="nav-menu-container">
+          <div class="userInfos">
+            <div class="userLogo">
+              <span class="far fa-user user-icon"></span>
+            </div>
+            <div class="user-info">
+              <span class="user-name text-sm font-semibold">John Doe</span>
+              <span class="user-text text-sm font-semibold">JohnDoe328@gmail.com</span>
+            </div>
+          </div>
+
+          <ul class="nav-menu" id="menu" aria-labelledby="menu">
+            <li class="nav-item box">
+              <div class="search-box">
+                <span class="fas fa-search search-icon"></span>
+                <input type="search" placeholder="Search here......">
+              </div>
+              <span class="tooltip">Search</span>
+            </li>
+            <li class="nav-item">
+              <a href="./app.html" class="nav-link active-link dropBtn">
+                <span class="fas fa-home menu-icon"></span>
+                <span class="link-name">Home</span>
+              </a>
+              <span class="tooltip">Home</span>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="./transaction.html" class="nav-link">
+                <span class="fas fa-list menu-icon"></span>
+                <span class="link-name">Trasnsactions</span>
+              </a>
+              <span class="tooltip">Trasnsactions</span>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="fas fa-wallet menu-icon"></span>
+                <span class="link-name">Wallet</span>
+              </a>
+              <span class="tooltip">Wallet</span>
+            </li>
+            <li class="nav-item">
+              <a href="profile.html" class="nav-link">
+                <span class="far fa-user menu-icon"></span>
+                <span class="link-name">Profile</span>
+              </a>
+              <span class="tooltip">Profile</span>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="fas fa-sliders menu-icon"></span>
+                <span class="link-name">Settings</span>
+              </a>
+              <span class="tooltip">Settings</span>
+            </li>
+          </ul>
+          <span class="fa fa-angle-right show-icon"></span>
+          <div class="log-out relative">
+            <div class="log-out-container">
+              <a href="./signIn.html" target="_blank" id="logBtn">
+                <span class="fas fa-arrow-right-from-bracket"></span>
+                <span class="log-out-label">Logout</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-section">
+      <div class="hero-container">
+        <nav class="app-navigation">
+          <div class="nav-container">
+            <div class="nav-logo">
+              <span class="fa fa-piggy-bank"></span>
+              <span class="logo-name">Piggy Bank</span>
+            </div>
+
+            <div class="notification-container">
+              <span class="fas fa-bell notification-icon"></span>
+            </div>
+          </div>
+        </nav>
+
+        <!-- MAIN CONTENT MARKUP -->
+        <section class="content-container" id="main-container">
+          <div class="container mx-auto mt-24 p-4">
+            <div class="card-container grid md:grid-cols-2 gap-6">
+              <div class="balance-card w-full relative h-64 py-5 rounded-2xl px-4">
+                <div class="balance-container">
+                  <img src="./img/chip-1.svg" alt="" class="chip-image h-16 mt-[5.5rem]" />
+                  <div class="amount-container">
+                    <span class="balance-label block text-2xl font-semibold text-white">Total Balance In Naira</span>
+                    <span
+                      class="amount amount-in-naira inline-block text-[1.3em] text-white font-semibold mt-2">0</span>
+                  </div>
+                  <div class="account-details relative mt-24">
+                    <div class="account-numnber">
+                      <span class="number">2196081256</span>
+                    </div>
+                    <div class="account-name">
+                      <span class="name"></span>
+                    </div>
+                  </div>
+                  <img src="img/visa-10.svg" alt="" class="visa-image h-9 bottom-3 right-9" />
+                </div>
+                <button type="button"
+                  class="add-btn w-9 h-9 rounded-[50%] border-2 border-[#008cb1] bg-white text-xl cursor-pointer font-semibold text-[#3127d3]">
+                  <span class="fa fa-plus"></span>
+                </button>
+              </div>
+              <div class="balance-card w-full relative h-64 py-5 rounded-2xl px-4">
+                <div class="balance-container">
+                  <img src="./img/chip-1.svg" alt="" class="chip-image h-16 mt-[5.5rem]" />
+                  <div class="amount-container">
+                    <span class="balance-label block text-2xl font-semibold text-white">Total Balance In Dollar</span>
+                    <span
+                      class="amount-in-dollar amount inline-block text-[1.3em] text-white font-semibold mt-2">0</span>
+                  </div>
+                  <div class="account-details relative mt-24">
+                    <div class="account-numnber">
+                      <span class="number">2196081256</span>
+                    </div>
+                    <div class="account-name">
+                      <span class="name"></span>
+                    </div>
+                  </div>
+                  <img src="img/mastercard-2.svg" alt="" class="master-image h-12 bottom-3 right-9" />
+                </div>
+                <button type="button"
+                  class="add-btn w-9 h-9 rounded-[50%] border-2 border-[#008cb1] bg-white text-xl cursor-pointer font-semibold text-[#3127d3]">
+                  <span class="fa fa-plus"></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="favourite-container mt-10 relative">
+              <h2 class="text-3xl text-indigo-800 font-bold text-center">My Favorite</h2>
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto mt-16 lg:gap-24 md:gap-24 gap-12">
+                <div class="flex flex-col items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="block h-24 w-24 text-indigo-700">
+                    <path
+                      d="M535 41c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l64 64c4.5 4.5 7 10.6 7 17s-2.5 12.5-7 17l-64 64c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l23-23L384 112c-13.3 0-24-10.7-24-24s10.7-24 24-24l174.1 0L535 41zM105 377l-23 23L256 400c13.3 0 24 10.7 24 24s-10.7 24-24 24L81.9 448l23 23c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L7 441c-4.5-4.5-7-10.6-7-17s2.5-12.5 7-17l64-64c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM96 64H337.9c-3.7 7.2-5.9 15.3-5.9 24c0 28.7 23.3 52 52 52l117.4 0c-4 17 .6 35.5 13.8 48.8c20.3 20.3 53.2 20.3 73.5 0L608 169.5V384c0 35.3-28.7 64-64 64H302.1c3.7-7.2 5.9-15.3 5.9-24c0-28.7-23.3-52-52-52l-117.4 0c4-17-.6-35.5-13.8-48.8c-20.3-20.3-53.2-20.3-73.5 0L32 342.5V128c0-35.3 28.7-64 64-64zm64 64H96v64c35.3 0 64-28.7 64-64zM544 320c-35.3 0-64 28.7-64 64h64V320zM320 352c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96s43 96 96 96z" />
+                  </svg>
+                  <p class="text-slate-700 text-xl font-semibold">Send Money</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="block h-24 w-24">
+                    <path
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                  </svg>
+                  <p class="text-slate-700 text-xl font-semibold">Profile</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="h-24 block w-24">
+                    <path
+                      d="M64 32C28.7 32 0 60.7 0 96v32H576V96c0-35.3-28.7-64-64-64H64zM576 224H0V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V224zM112 352h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm112 16c0-8.8 7.2-16 16-16H368c8.8 0 16 7.2 16 16s-7.2 16-16 16H240c-8.8 0-16-7.2-16-16z" />
+                  </svg>
+                  <p class="text-slate-700 text-xl font-semibold">Fund Account</p>
+                </div>
+              </div>
+              <h2 class="text-2xl text-slate-800 text-center mt-10 font-bold">Hi, <span
+                  class="welcome-name text-slate-800 font-semibold"></span> </h2>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script defer type="module" src="js/App.js"></script>
+</body>
+
+</html>

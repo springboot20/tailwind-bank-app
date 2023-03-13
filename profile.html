@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./img/piggy-bank.svg" type="image/x-icon" />
+	<script src="https://kit.fontawesome.com/643f8e5097.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./css/styles.css" />
+	<title>Profile Page</title>
+</head>
+
+<body>
+	<div id="loader">
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+	</div>
+
+	<div class="App-container" id="root">
+		<nav class="navigation" id="navigation">
+			<div class="container navigation-container">
+				<div class="nav-menu-container">
+					<div class="userInfos">
+						<div class="userLogo">
+							<span class="far fa-user user-icon"></span>
+						</div>
+						<div class="user-info">
+							<span class="user-name">John Doe</span>
+							<span class="user-text">JohnDoe328@gmail.com</span>
+						</div>
+					</div>
+
+					<ul class="nav-menu" id="menu" aria-labelledby="menu">
+						<li class="nav-item box">
+							<div class="search-box">
+								<span class="fas fa-search search-icon"></span>
+								<input type="search" placeholder="Search here......" />
+							</div>
+							<span class="tooltip">Search</span>
+						</li>
+						<li class="nav-item">
+							<a href="./app.html" class="nav-link active-link dropBtn">
+								<span class="fas fa-home menu-icon"></span>
+								<span class="link-name">Home</span>
+							</a>
+							<span class="tooltip">Home</span>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="./transaction.html" class="nav-link" id="drop-down">
+								<span class="fas fa-list menu-icon"></span>
+								<span class="link-name">Trasnsactions</span>
+							</a>
+							<span class="tooltip">Transaction</span>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">
+								<span class="fas fa-wallet menu-icon"></span>
+								<span class="link-name">Wallet</span>
+							</a>
+							<span class="tooltip">Wallet</span>
+						</li>
+						<li class="nav-item">
+							<a href="profile.html" class="nav-link">
+								<span class="far fa-user menu-icon"></span>
+								<span class="link-name">Profile</span>
+							</a>
+							<span class="tooltip">Profile</span>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">
+								<span class="fas fa-sliders menu-icon"></span>
+								<span class="link-name">Settings</span>
+							</a>
+							<span class="tooltip">Setiings</span>
+						</li>
+					</ul>
+					<span class="fa fa-angle-right show-icon"></span>
+					<div class="log-out relative">
+						<div class="log-out-container">
+							<a href="./signIn.html" target="_blank" id="logBtn">
+								<span class="fas fa-arrow-right-from-bracket"></span>
+								<span class="log-out-label">Logout</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<main class="main-section">
+			<nav class="app-navigation">
+				<div class="nav-container">
+					<div class="nav-logo">
+						<span class="fa fa-piggy-bank"></span>
+						<span class="logo-name">Piggy Bank</span>
+					</div>
+
+					<div class="notification-container">
+						<span class="fas fa-bell notification-icon"></span>
+					</div>
+				</div>
+			</nav>
+
+			<!-- MAIN CONTENT MARKUP -->
+			<section class="content-container min-w-full absolute top-20" id="content-container">
+				<div class="container mx-auto mt-2 p-4">
+					<h1 class="text-6xl text-indigo-800 font-semibold text-center">
+						Profile Page
+					</h1>
+					<div class="profile-container mt-4 max-w-6xl mx-auto">
+						<div class="p-4 bg-white rounded-md shadow-lg mb-4 h-20">
+							<p class="first-name font-semibold inline-block text-2xl text-gray-800">
+								First name :
+								<span class="first text-gray-500 font-semibold ml-4"></span>
+							</p>
+						</div>
+						<div class="p-4 bg-white rounded-md shadow-lg mb-4 h-20">
+							<p class="last-name font-semibold inline-block text-2xl text-gray-800">
+								Last name :
+								<span class="last text-gray-500 font-semibold ml-4"></span>
+							</p>
+						</div>
+						<div class="p-4 bg-white rounded-md shadow-lg mb-4 h-20">
+							<p class="email-adress font-semibold inline-block text-2xl text-gray-800">
+								Email Address :
+								<span class="email text-gray-500 font-semibold ml-4"></span>
+							</p>
+						</div>
+						<div class="p-4 bg-white rounded-md shadow-lg mb-4 h-20">
+							<p class="font-semibold inline-block text-2xl text-gray-800">
+								Balance :
+								<span class="balance text-gray-500 font-semibold ml-4"></span>
+							</p>
+						</div>
+						<div class="p-4 bg-white rounded-md shadow-lg mb-4 h-20">
+							<p class="transfer-pin font-semibold inline-block text-2xl text-gray-800">
+								Transfer pin :
+							</p>
+						</div>
+						<div class="p-4 bg-white rounded-md shadow-lg mb-4 h-20">
+							<p class="account-no font-semibold inline-block text-2xl text-gray-800">
+								Account Number :
+								<span class="balance text-gray-500 font-semibold ml-4">2196081256</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<script type="module" src="./js/profile.js"></script>
+</body>
+
+</html>
