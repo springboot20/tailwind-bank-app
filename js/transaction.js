@@ -100,12 +100,18 @@ transferForm.addEventListener("submit", (event) => {
 	event.preventDefault();
 
 	let fields = Array.from(document.querySelectorAll('.field'));
-	console.log(fields);
 	if (select.value === "" || accountnumber.value === "" || accountname.value === "" || amount.value === "") {
 		fields.forEach((field) => {
 			field.classList.add('error', 'shake');
+			field.classList.remove('valid');
 		})
 	} else {
+
+		fields.forEach((field) => {
+			field.classList.add('valid');
+			field.classList.remove('error', 'shake');
+		});
+		
 		setTransactionHistory();
 		setBalance();
 		console.log(AllUserAccounts);

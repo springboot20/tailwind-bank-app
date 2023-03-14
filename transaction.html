@@ -136,7 +136,7 @@
 											<option value="OPay">OPay</option>
 										</select>
 									</div>
-									<small class="error error-txt">Please select a bank</small>
+									<small class="error error-txt mb-2">Please select a bank</small>
 								</div>
 								<div class="field">
 									<div class="form-group">
@@ -144,7 +144,7 @@
 										<input type="text" name="account-number" id="account-number" class="form-control"
 											placeholder="enter account number" />
 									</div>
-									<small class="error error-txt">enter an account number</small>
+									<small class="error error-txt mb-2">enter an account number</small>
 								</div>
 								<div class="field">
 									<div class="form-group">
@@ -152,7 +152,7 @@
 										<input type="text" name="account-name" id="account-name" class="form-control"
 											placeholder="enter account name" />
 									</div>
-									<small class="error error-txt">enter an account name</small>
+									<small class="error error-txt mb-2">enter an account name</small>
 								</div>
 								<div class="field">
 									<div class="form-group">
@@ -161,7 +161,7 @@
 										</label>
 										<input type="text" name="amount" id="amount" class="form-control" placeholder="enter amount" />
 									</div>
-									<small class="error error-txt">enter an amount</small>
+									<small class="error error-txt mb-2">enter an amount</small>
 								</div>
 								<div class="field">
 									<div class="form-group">
@@ -170,7 +170,7 @@
 									</div>
 								</div>
 								<button type="submit"
-									class="pay-btn py-3 px-5 w-full text-center text-white bg-indigo-600 ring-2 rounded-md ring-offset-1 ring-indigo-400"
+									class="pay-btn py-3 mt-4 px-5 w-full text-center text-white bg-indigo-600 ring-2 rounded-md ring-offset-1 ring-indigo-400"
 									id="tranfer-btn">
 									Done
 								</button>
@@ -181,7 +181,23 @@
 			</div>
 		</main>
 	</div>
+	<div class="notification-message">
+		<span class="fa fa-circle-check"></span>
+		<div class="notification-body">
+			<h3 class="notification-title">Success</h3>
+			<p class="notification-text">You have successfully signed up</p>
+		</div>
+		<span class="fa fa-close close"></span>
+	</div>
 
+	<div class="error-notification-message">
+		<span class="fa fa-exclamation-circle"></span>
+		<div class="error-notification-body">
+			<h3 class="error-notification-title">Error</h3>
+			<p class="error-notification-text">Please fill in the inputs respectively</p>
+		</div>
+		<span class="fa fa-close"></span>
+	</div>
 	<script type="module" src="./js/transaction.js"></script>
 </body>
 

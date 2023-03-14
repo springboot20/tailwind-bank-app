@@ -1575,6 +1575,7 @@ form p a:active {
 }
 
 #transaction-form .form-group .form-control {
+  margin-bottom: 1rem;
   height: 100%;
   width: 100%;
   -webkit-appearance: none;
@@ -1617,6 +1618,36 @@ form p a:active {
   outline-offset: 2px;
 }
 
+#transaction-form .field input:focus,
+	#transaction-form .field select:focus,
+	#transaction-form .field.valid input,
+	#transaction-form .field.valid select {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --tw-border-opacity: 1;
+  border-color: rgb(134 183 254 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(33 37 41 / var(--tw-text-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+#transaction-form .field.shake input,
+	#transaction-form .field.shake select,
+	#transaction-form .field.error input:focus,
+	#transaction-form .field.error select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(244, 16, 16, 0.407);
+  --tw-border-opacity: 1;
+  border-color: rgb(247 88 66 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(33 37 41 / var(--tw-text-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 #transaction-form .transfer-field {
   margin-bottom: 1rem;
 }
@@ -1627,11 +1658,138 @@ form p a:active {
 }
 
 .transfer-field .error-txt {
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   display: inline-block;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(220 53 69 / var(--tw-text-opacity));
+}
+
+/*************
+	NOTIFICATION STYLS
+	************/
+
+.notification-message,
+	.error-notification-message {
+  position: absolute;
+  display: flex;
+  top: 30px;
+  left: 0;
+  width: 400px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 0.3rem;
+  transition: all 800ms;
+  opacity: 1;
+  z-index: 1001;
+  /*overflow: hidden;*/
+  @A
+	
+}
+
+.notification-message::before,
+	.error-notification-message::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 100%;
+  width: 0.6rem;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.notification-message::after,
+	.error-notification-message::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 0.4rem;
+  bottom: 0;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.notification-message::before {
+  background: hsl(134, 85%, 62%);
+}
+
+.error-notification-message::before {
+  background: hsl(0, 85%, 62%);
+}
+
+.notification-message::after {
+  background: hsl(134, 85%, 62%);
+}
+
+.error-notification-message::after {
+  background: hsl(0, 85%, 62%);
+}
+
+.notification-message span.fa-circle-check,
+	.error-notification-message span.fa-exclamation-circle,
+	.error-notification-message span.fa-close,
+	.notification-message span.fa-close {
+  position: absolute;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.notification-body {
+  width: 240px;
+}
+
+.error-notification-body {
+  width: 240px;
+}
+
+.notification-message span.fa-circle-check {
+  left: 20px;
+  color: hsl(134, 85%, 62%);
+}
+
+.notification-message span.fa-close,
+	.error-notification-message span.fa-close {
+  right: 20px;
+  top: 10px;
+}
+
+.error-notification-message span.fa-exclamation-circle {
+  left: 20px;
+  color: hsl(0, 85%, 62%);
+}
+
+.notification-message.active,
+	.error-notification-message.active {
+  left: 35px;
+  opacity: 1;
+}
+
+.notification-message.active::after,
+	.error-notification-message.active::after {
+  -webkit-animation: animateLoad 5s linear infinite;
+          animation: animateLoad 5s linear infinite;
+}
+
+@-webkit-keyframes animateLoad {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes animateLoad {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
 }
 
 /*****************
@@ -1738,6 +1896,10 @@ form p a:active {
 
 .ml-4 {
   margin-left: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .block {
