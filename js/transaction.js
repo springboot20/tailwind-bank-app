@@ -75,25 +75,45 @@ const setBalance = () => {
 	let ind = JSON.parse(localStorage.getItem('user-index'));
 	AllUserAccounts = JSON.parse(localStorage.getItem('users-accounts'));
 
-	let transactionAmount = JSON.parse(localStorage.getItem('users-accounts'))[ind]._balance
-	let newBalance = parseInt(transactionAmount) - parseInt(Number(amount.value))
-	balance = newBalance;
-	AllUserAccounts[ind]._balance = balance;
+	let prevBalance = JSON.parse(localStorage.getItem('users-accounts'))[ind]._balance;
+
+	if (parseInt(prevBalance) < parseInt(Number(amount.value))) {
+		alert('insufficient balance')
+	} else {
+		let newBalance = parseInt(prevBalance) - parseInt(Number(amount.value));
+		balance = newBalance;
+		AllUserAccounts[ind]._balance = balance;
+		console.log(newBalance, 'At line 86 in vscode');
+
+		setTimeout(() => {
+			window.location.href = transferForm.getAttribute('action');
+		}, 2500)
+	}
+
 	localStorage.setItem('users-accounts', JSON.stringify(AllUserAccounts));
 
-	console.log(transactionAmount);
+	console.log(prevBalance);
 	console.log(AllUserAccounts);
-	console.log(newBalance, 'At line 132 in vscode');
 }
 
 transferForm.addEventListener("submit", (event) => {
 	event.preventDefault();
 
-	setTransactionHistory();
-	setBalance();
+	let fields = Array.from(document.querySelectorAll('.field'));
+	console.log(fields);
+	if (select.value === "" || accountnumber.value === "" || accountname.value === "" || amount.value === "") {
+		fields.forEach((field) => {
+			field.classList.add('error', 'shake');
+		})
+	} else {
+		setTransactionHistory();
+		setBalance();
+		console.log(AllUserAccounts);
+	}
 
 	setTimeout(() => {
-		window.location.href = transferForm.getAttribute('action');
-	}, 2500)
-	console.log(AllUserAccounts);
+		fields.forEach((field) => {
+			field.classList.remove('error', 'shake');
+		})
+	}, 2000)
 });
