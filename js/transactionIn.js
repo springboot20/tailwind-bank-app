@@ -6,7 +6,7 @@ import showMenu, { addActive, loadDetails } from "./helper.js"
 (() => {
 	showMenu('show-icon', 'nav-menu-container', 'search-icon');
 	addActive('active', 'a');
-	loadDetails('user-name', 'user-text')
+	loadDetails('user-text', 'user-name');
 })();
 
 let AllUserAccounts = [];
