@@ -120,8 +120,20 @@
 			</nav>
 			<!-- MAIN CONTENT MARKUP -->
 			<section class="transfer-container absolute top-20 min-w-full" id="transfer-container">
-				<div class="container mx-auto mt-2 p-4 max-w-[90rem]">
-					<div class="transactions-container ">
+				<div class="container mx-auto mt-2 p-4 max-w-[120rem]">
+					<div class="action-buttons flex items-center justify-between text-center bg-white mb-5 rounded-md shadow-lg">
+						<h2 class="text-2xl text-red-600 font-bold border-r-2 h-full p-4">Debit Transaction Histories</h2>
+						<h2 class="text-2xl text-green-600 font-bold border-r-2 h-full p-4">Credit Transaction	Histories</h2>
+					</div>
+					<div class="transactions grid grid-cols-2 gap-5">
+						<div class="transaction-out">
+							<div class="transactionsOut-container">
+							</div>
+						</div>
+						<div class="transaction-in">
+							<div class="transactionsIn-container ">
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>

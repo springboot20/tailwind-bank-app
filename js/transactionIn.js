@@ -37,6 +37,7 @@ const setTransactionsInHistory = () => {
 	AllUserAccounts = JSON.parse(localStorage.getItem('users-accounts'));
 
 	let newTransactionsInHistory = {
+		_id: new Date().getTime().toString(36) + new Date().getUTCMilliseconds(),
 		time: new Date().toLocaleString(),
 		sourceName: sourcename.value,
 		message: msg.value,
@@ -64,15 +65,37 @@ const setBalance = () => {
 	console.log(newBalance, 'At line 89 in vscode');
 }
 
+let success = document.querySelector('.notification-message');
 document.querySelector('form').addEventListener('submit', (event) => {
 	event.preventDefault();
 
-	setTransactionsInHistory();
-	setBalance();
+	let fields = Array.from(document.querySelectorAll('.field'));
+	if (sourcename.value === "" || amount.value === "") {
+		fields.forEach((field) => {
+			field.classList.add('error', 'shake');
+			field.classList.remove('valid');
+		})
+	} else {
+		fields.forEach((field) => {
+			field.classList.add('valid');
+			field.classList.remove('error', 'shake');
+		});
+
+		setTransactionsInHistory();
+		setBalance();
+		success.classList.add('active')
+
+		setTimeout(() => {
+			window.location.href = document.querySelector('form').getAttribute('action');
+			success.classList.remove('active');
+		}, 1000)
+	}
 
 	setTimeout(() => {
-		window.location.href = document.querySelector('form').getAttribute('action');
-	}, 2500)
+		fields.forEach((field) => {
+			field.classList.remove('error', 'shake');
+		})
+	}, 2000)
 })
 
 window.addEventListener('load', () => {

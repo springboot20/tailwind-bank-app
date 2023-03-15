@@ -49,6 +49,9 @@ const accountnumber = document.getElementById("account-number");
 const accountname = document.getElementById("account-name");
 const amount = document.getElementById("amount");
 
+let error = document.querySelector('.error-notification-message');
+let success = document.querySelector('.notification-message');
+
 const transferForm = document.getElementById("transaction-form");
 
 const setTransactionHistory = () => {
@@ -78,16 +81,19 @@ const setBalance = () => {
 	let prevBalance = JSON.parse(localStorage.getItem('users-accounts'))[ind]._balance;
 
 	if (parseInt(prevBalance) < parseInt(Number(amount.value))) {
-		alert('insufficient balance')
+		error.classList.add('active');
 	} else {
 		let newBalance = parseInt(prevBalance) - parseInt(Number(amount.value));
 		balance = newBalance;
 		AllUserAccounts[ind]._balance = balance;
 		console.log(newBalance, 'At line 86 in vscode');
 
+		success.classList.add('active');
+
 		setTimeout(() => {
 			window.location.href = transferForm.getAttribute('action');
-		}, 2500)
+			success.classList.remove('active');
+		}, 1000)
 	}
 
 	localStorage.setItem('users-accounts', JSON.stringify(AllUserAccounts));
@@ -95,6 +101,7 @@ const setBalance = () => {
 	console.log(prevBalance);
 	console.log(AllUserAccounts);
 }
+
 
 transferForm.addEventListener("submit", (event) => {
 	event.preventDefault();
@@ -106,16 +113,19 @@ transferForm.addEventListener("submit", (event) => {
 			field.classList.remove('valid');
 		})
 	} else {
-
 		fields.forEach((field) => {
 			field.classList.add('valid');
 			field.classList.remove('error', 'shake');
 		});
-		
+
 		setTransactionHistory();
 		setBalance();
 		console.log(AllUserAccounts);
 	}
+
+	setTimeout(() => {
+		error.classList.remove('active')
+	}, 5000);
 
 	setTimeout(() => {
 		fields.forEach((field) => {
