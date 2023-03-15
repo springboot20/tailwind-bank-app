@@ -1,20 +1,11 @@
-import showMenu from "./helper.js";
+import showMenu, {addActive} from "./helper.js";
 
 (() => {
 	showMenu("show-icon", "nav-menu-container", "search-icon");
 })();
 
-const navLinks = document.querySelectorAll(".nav-item a.nav-link");
-function linkAction() {
-	navLinks.forEach((n) => n.classList.remove("active-link"));
-	this.classList.add("active-link");
-
-	const navMenu = document.querySelector(`.nav-menu-container`);
-	navMenu.classList.remove("show");
-}
-navLinks.forEach((m) => m.addEventListener("click", linkAction));
-
 addEventListener("load", () => {
+	addActive('active', 'a')
 	document.body.classList.add("loaded");
 });
 

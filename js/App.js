@@ -1,4 +1,4 @@
-import showMenu from "./helper.js"
+import showMenu,{addActive} from "./helper.js"
 
 /**
  *
@@ -7,21 +7,12 @@ import showMenu from "./helper.js"
  */
 
 (() => {
-  showMenu('show-icon', 'nav-menu-container', 'search-icon')
+  showMenu('show-icon', 'nav-menu-container', 'search-icon');
+  addActive('active', 'a')
 })()
 
-const navLinks = document.querySelectorAll(".nav-item a.nav-link");
-function linkAction() {
-  navLinks.forEach((n) => n.classList.remove("active-link"));
-  this.classList.add("active-link");
-
-  const navMenu = document.querySelector(`.nav-menu-container`);
-  navMenu.classList.remove("show");
-}
-navLinks.forEach((m) => m.addEventListener("click", linkAction));
-
 addEventListener('load', () => {
-  document.body.classList.add('loaded')
+  document.body.classList.add('loaded');
 })
 
 

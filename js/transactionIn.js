@@ -1,10 +1,11 @@
 /**
  * FORM SCRIPT SCOPE
 */
-import showMenu from "./helper.js"
+import showMenu,{addActive} from "./helper.js"
 
 (() => {
 	showMenu('show-icon', 'nav-menu-container', 'search-icon');
+	addActive('active', 'a')
 })();
 
 let AllUserAccounts = [];

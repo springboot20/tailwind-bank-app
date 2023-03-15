@@ -20,4 +20,19 @@ const showMenu = (openId, menuId, searchId) => {
 	}
 }
 
+
+
+function addActive(linkId, ele) {
+	const activePage = window.location.pathname
+	const links = document.querySelectorAll(`.nav-item ${ele}`);
+
+	links.forEach(link => {
+		if (link.href.includes(`${activePage}`)) {
+			link.classList.add(`${linkId}`)
+		}
+	});
+
+	console.log(activePage)
+}
 export default showMenu
+export { addActive }
