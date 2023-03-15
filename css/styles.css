@@ -888,7 +888,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 .nav-menu-container ul.nav-menu li.nav-item span.tooltip {
   position: absolute;
   top: 0px;
-  left: 8rem;
+  left: 11rem;
   height: 2.25rem;
   width: 8rem;
   border-radius: 0.375rem;
@@ -2012,10 +2012,6 @@ form p a:active {
 
 .h-auto {
   height: auto;
-}
-
-.h-2 {
-  height: 0.5rem;
 }
 
 .min-h-screen {
