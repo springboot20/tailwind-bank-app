@@ -714,6 +714,18 @@ body {
   transition-duration: 150ms;
 }
 
+.nav-menu-container .user-info .user-email, .nav-menu-container .user-info .user-name {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.nav-menu-container .user-info .user-name {
+  margin-bottom: 0.5rem;
+}
+
 .nav-menu-container.open .user-info {
   opacity: 1;
 }
@@ -2257,11 +2269,6 @@ form p a:active {
   text-align: center;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2293,6 +2300,11 @@ form p a:active {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-semibold {
