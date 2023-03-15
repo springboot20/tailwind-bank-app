@@ -2493,8 +2493,16 @@ form p a:active {
     min-height: 0px;
   }
 
+  .lg\:min-w-full {
+    min-width: 100%;
+  }
+
   .lg\:max-w-4xl {
     max-width: 56rem;
+  }
+
+  .lg\:max-w-\[120rem\] {
+    max-width: 120rem;
   }
 
   .lg\:translate-x-0 {
