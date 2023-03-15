@@ -20,6 +20,7 @@ const showMenu = (openId, menuId, searchId) => {
 	}
 }
 
+let AllUsersAccounts = [];
 
 
 function addActive(linkId, ele) {
@@ -34,5 +35,21 @@ function addActive(linkId, ele) {
 
 	console.log(activePage)
 }
+
+function loadDetails(emailId, nameId) {
+	const userEmail = document.querySelector(`.${emailId}`);
+	const userName = document.querySelector(`.${nameId}`);
+
+	let ind = JSON.parse(localStorage.getItem('user-index'));
+	AllUsersAccounts = JSON.parse(localStorage.getItem('users-accounts'));
+
+	let email = AllUsersAccounts[ind].emailAddress;
+	let firstName = AllUsersAccounts[ind].firstName;
+	let lastName = AllUsersAccounts[ind].lastName;
+
+	userEmail.innerHTML = `${email}`;
+	userName.innerHTML = `${firstName} ${lastName}`;
+}
+
 export default showMenu
-export { addActive }
+export { addActive, loadDetails }

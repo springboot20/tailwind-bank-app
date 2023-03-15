@@ -1,7 +1,8 @@
-import showMenu, {addActive} from "./helper.js";
+import showMenu, {addActive, loadDetails} from "./helper.js";
 
 (() => {
 	showMenu("show-icon", "nav-menu-container", "search-icon");
+	loadDetails('user-name', 'user-text')
 })();
 
 addEventListener("load", () => {
