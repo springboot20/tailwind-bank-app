@@ -1676,6 +1676,8 @@ form p a:active {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  --tw-border-opacity: 1;
+  border-color: rgb(247 88 66 / var(--tw-border-opacity));
 }
 
 #clear-btn:hover {
