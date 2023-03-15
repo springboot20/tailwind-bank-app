@@ -26,9 +26,9 @@ const formatNaira = new Intl.NumberFormat("en-NG", {
 let historyContainer = document.querySelector('.transactionsOut-container');
 function setTransactionHistory() {
 	let ind = JSON.parse(localStorage.getItem('user-index'));
-	let transactionHistory = JSON.parse(localStorage.getItem('users-accounts'));
+	AllUserAccounts = JSON.parse(localStorage.getItem('users-accounts'));
 
-	transactionHistory[ind]._transactionsHistory.forEach((history) => {
+	AllUserAccounts[ind]._transactionsHistory.forEach((history) => {
 		let card = document.createElement('div');
 		card.className = 'transaction-card flex justify-between text-center p-4 rounded-lg bg-white shadow-md mb-2 border-2 border-slate-300';
 
@@ -67,9 +67,9 @@ function setTransactionHistory() {
 let historyInContainer = document.querySelector('.transactionsIn-container');
 function setTransactionInHistory() {
 	let ind = JSON.parse(localStorage.getItem('user-index'));
-	let transactionInHistory = JSON.parse(localStorage.getItem('users-accounts'));
+	AllUserAccounts = JSON.parse(localStorage.getItem('users-accounts'));
 
-	transactionInHistory[ind]._transactionsInHistory.forEach((history) => {
+	AllUserAccounts[ind]._transactionsInHistory.forEach((history) => {
 		let card = document.createElement('div');
 		card.className = 'transaction-card flex justify-between text-center p-4 rounded-lg bg-white shadow-md mb-2 border-2 border-slate-300';
 

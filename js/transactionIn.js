@@ -14,7 +14,7 @@ let balance = 0;
 
 function getPreviousTransactionInHistory() {
 	let ind = JSON.parse(localStorage.getItem("user-index"));
-	let currentUserTransactionsInHistory = JSON.parse(localStorage.getItem("users-accounts"))[ind]._transactionsHistory;
+	let currentUserTransactionsInHistory = JSON.parse(localStorage.getItem("users-accounts"))[ind]._transactionsInHistory;
 	if (currentUserTransactionsInHistory) {
 		transactionsInHistory = currentUserTransactionsInHistory;
 	}
@@ -45,7 +45,7 @@ const setTransactionsInHistory = () => {
 		amount: Number(amount.value)
 	};
 
-	transactionsInHistory.push({ ...newTransactionsInHistory });
+	transactionsInHistory.push(newTransactionsInHistory);
 	AllUserAccounts[ind]._transactionsInHistory = transactionsInHistory
 	localStorage.setItem("users-accounts", JSON.stringify(AllUserAccounts));
 }
