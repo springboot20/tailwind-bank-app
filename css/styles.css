@@ -1672,6 +1672,25 @@ form p a:active {
   color: rgb(220 53 69 / var(--tw-text-opacity));
 }
 
+#clear-btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+#clear-btn:hover {
+  box-shadow: 0 0 0 0.25rem rgba(244, 16, 16, 0.407);
+  --tw-border-opacity: 1;
+  border-color: rgb(247 88 66 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(33 37 41 / var(--tw-text-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 /*************
 	NOTIFICATION STYLES
 	************/
