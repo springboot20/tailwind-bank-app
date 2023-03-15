@@ -1740,6 +1740,12 @@ form p a:active {
   border-bottom-right-radius: 0.375rem;
 }
 
+.notification-body, .error-notification-body {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .notification-message::before {
   background: hsl(134, 85%, 62%);
 }

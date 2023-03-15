@@ -1,5 +1,5 @@
 //template
-import showMenu,{addActive} from "./helper.js";
+import showMenu, { addActive } from "./helper.js";
 
 (() => {
 	showMenu('show-icon', 'nav-menu-container', 'search-icon');
@@ -7,6 +7,16 @@ import showMenu,{addActive} from "./helper.js";
 })();
 
 let AllUserAccounts = [];
+let transactionInHistory = [];
+
+function loadState() {
+	let ind = JSON.parse(localStorage.getItem('user-index'));
+	let currentUserInHistory = JSON.parse(localStorage.getItem('users-accounts'))[ind]._transactionsInHistory;
+	if (currentUserInHistory) {
+		transactionInHistory = currentUserInHistory
+	}
+}
+
 
 const formatNaira = new Intl.NumberFormat("en-NG", {
 	currency: "NGN",
@@ -108,5 +118,7 @@ clearbtn.addEventListener('click', clearTransaction)
 window.addEventListener('load', () => {
 	setTransactionHistory();
 	setTransactionInHistory();
+
+	loadState();
 	document.body.classList.add('loaded');
 })

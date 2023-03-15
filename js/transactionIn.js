@@ -1,7 +1,7 @@
 /**
  * FORM SCRIPT SCOPE
 */
-import showMenu,{addActive} from "./helper.js"
+import showMenu, { addActive } from "./helper.js"
 
 (() => {
 	showMenu('show-icon', 'nav-menu-container', 'search-icon');
@@ -45,7 +45,7 @@ const setTransactionsInHistory = () => {
 		amount: Number(amount.value)
 	};
 
-	transactionsInHistory.push(newTransactionsInHistory);
+	transactionsInHistory.push({ ...newTransactionsInHistory });
 	AllUserAccounts[ind]._transactionsInHistory = transactionsInHistory
 	localStorage.setItem("users-accounts", JSON.stringify(AllUserAccounts));
 }
