@@ -1777,6 +1777,7 @@ form p a:active {
   cursor: pointer;
   font-size: 1.5rem;
   line-height: 2rem;
+  line-height: 0;
 }
 
 .error-notification-text, .notification-text {
