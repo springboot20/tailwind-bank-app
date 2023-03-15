@@ -1703,7 +1703,7 @@ form p a:active {
   right: 1.5rem;
   z-index: 50;
   display: flex;
-  height: 60px;
+  height: 65px;
   width: 400px;
   align-items: center;
   justify-content: center;
@@ -2042,10 +2042,6 @@ form p a:active {
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[120rem\] {
-  max-width: 120rem;
 }
 
 .flex-shrink-0 {
@@ -2491,10 +2487,6 @@ form p a:active {
 
   .lg\:min-h-0 {
     min-height: 0px;
-  }
-
-  .lg\:min-w-full {
-    min-width: 100%;
   }
 
   .lg\:max-w-4xl {
