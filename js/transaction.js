@@ -1,7 +1,7 @@
 import showMenu, {addActive, loadDetails} from "./helper.js";
 
 (() => {
-	showMenu("show-icon", "nav-menu-container", "search-icon");
+	showMenu("show-icon", "nav-menu-container", "search-icon", "fa-bars");
 	loadDetails('user-email', 'user-name')
 })();
 
