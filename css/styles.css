@@ -1081,7 +1081,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 
 @media (min-width: 768px) {
   .balance-card {
-    max-width: 100%;
+    /* max-width: 100%; */
   }
 }
 
@@ -2676,5 +2676,17 @@ form p a:active {
   .lg\:text-\[\#121127\] {
     --tw-text-opacity: 1;
     color: rgb(18 17 39 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
