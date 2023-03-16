@@ -5,10 +5,11 @@
  * @param {*} menuId
  * @returns
  */
-const showMenu = (openId, menuId, searchId) => {
+const showMenu = (openId, menuId, searchId, barId) => {
 	const menu = document.querySelector(`.${menuId}`)
 	const openBtn = document.querySelector(`.${openId}`)
 	const searchBtn = document.querySelector(`.${searchId}`)
+	const menuBtn = document.querySelector(`.${barId}`)
 
 	if (openBtn && menu) {
 		openBtn.addEventListener("click", () => {
@@ -16,6 +17,9 @@ const showMenu = (openId, menuId, searchId) => {
 		})
 		searchBtn.addEventListener('click', () => {
 			menu.classList.toggle('open')
+		})
+		menuBtn.addEventListener('click', () => {
+			menu.classList.toggle('open');
 		})
 	}
 }
