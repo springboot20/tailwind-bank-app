@@ -1055,15 +1055,29 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 .nav-menu-container .log-out .mode {
   margin-bottom: 1rem;
   display: flex;
-  width: 28rem;
   align-items: center;
   --tw-bg-opacity: 1;
-  background-color: rgb(129 140 248 / var(--tw-bg-opacity));
+  background-color: rgb(67 56 202 / var(--tw-bg-opacity));
   padding: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.nav-menu-container .log-out .mode span {
+.nav-menu-container .log-out .moon-sun {
+  display: flex;
+  height: 50px;
+  width: 60px;
+  align-items: center;
+}
+
+.nav-menu-container .log-out .moon-sun span {
   position: absolute;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.nav-menu-container .log-out .mode span.sun {
+  opacity: 0;
 }
 
 .notification-container span.notification-icon::after {
