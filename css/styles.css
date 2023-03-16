@@ -473,7 +473,7 @@ body {
   }
 
   .content-container, .transfer-container {
-    margin-left: -5rem;
+    margin-left: -7rem;
   }
 
   .notification-container {
@@ -2405,9 +2405,9 @@ form p a:active {
   color: rgb(67 56 202 / var(--tw-text-opacity));
 }
 
-.text-slate-700 {
+.text-red-500 {
   --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .text-slate-800 {
@@ -2443,11 +2443,6 @@ form p a:active {
 .text-green-600 {
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
-}
-
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -2526,10 +2521,6 @@ form p a:active {
 @media (min-width: 768px) {
   .md\:h-auto {
     height: auto;
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:grid-cols-2 {
