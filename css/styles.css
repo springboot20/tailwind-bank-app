@@ -465,8 +465,22 @@ body {
     width: 100%;
   }
 
-  .container {
+  .content-container, .transfer-container {
     margin-left: -5rem;
+  }
+
+  .notification-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .notification-container span.fa-bars {
+    cursor: pointer;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 800;
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
   }
 
   .main-container {
