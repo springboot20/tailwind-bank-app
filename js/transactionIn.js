@@ -72,7 +72,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
 	event.preventDefault();
 
 	let fields = Array.from(document.querySelectorAll('.field'));
-	if (sourcename.value === "" || amount.value === "") {
+	if (sourcename.value.trim() === "" || amount.value.trim() === "") {
 		fields.forEach((field) => {
 			field.classList.add('error', 'shake');
 			field.classList.remove('valid');
@@ -97,7 +97,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
 		fields.forEach((field) => {
 			field.classList.remove('error', 'shake');
 		})
-	}, 2000)
+	}, 3000)
 })
 
 window.addEventListener('load', () => {
