@@ -31,7 +31,7 @@ function setTransactionHistory() {
 
 	AllUserAccounts[ind]._transactionsHistory.forEach((history) => {
 		let card = document.createElement('div');
-		card.className = 'transaction-card flex justify-between text-center p-4 rounded-lg bg-white shadow-md mb-2 border-2 border-slate-300';
+		card.className = 'transaction-card flex justify-between text-center gap-6 p-4 rounded-lg bg-white shadow-md mb-2 border-2 border-slate-300';
 
 		let timeContainer = document.createElement('div');
 		let amountContainer = document.createElement('div');
@@ -72,7 +72,7 @@ function setTransactionInHistory() {
 
 	AllUserAccounts[ind]._transactionsInHistory.forEach((history) => {
 		let card = document.createElement('div');
-		card.className = 'transaction-card flex justify-between text-center p-4 rounded-lg bg-white shadow-md mb-2 border-2 border-slate-300';
+		card.className = 'transaction-card flex justify-between gap-6 text-center p-4 rounded-lg bg-white shadow-md mb-2 border-2 border-slate-300';
 
 		let timeContainer = document.createElement('div');
 		let amountContainer = document.createElement('div');
