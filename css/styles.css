@@ -1007,13 +1007,14 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   opacity: 0;
 }
 
-.log-out {
+.nav-menu-container .log-out {
+  position: absolute;
+  bottom: 0px;
   z-index: 50;
   margin-top: 4rem;
-  list-style-type: none;
 }
 
-.log-out .log-out-container {
+.nav-menu-container .log-out .log-out-container {
   margin-left: 1.3rem;
   width: 100%;
   border-radius: 0.5rem;
@@ -1023,7 +1024,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   transition-duration: 150ms;
 }
 
-.log-out .log-out-container a {
+.nav-menu-container .log-out .log-out-container a {
   position: relative;
   display: flex;
   align-items: center;
@@ -1037,19 +1038,19 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   transition-duration: 150ms;
 }
 
-.log-out-container a span {
+.nav-menu-container .log-out-container a span {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.log-out-container a span.log-out-label {
+.nav-menu-container .log-out-container a span.log-out-label {
   margin-left: 1.5rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 700;
 }
 
-.log-out-container span.fas {
+.nav-menu-container .log-out-container span.fas {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
@@ -2676,10 +2677,6 @@ form p a:active {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .\32xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
