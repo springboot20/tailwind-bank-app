@@ -2129,6 +2129,14 @@ form p a:active {
   width: 90rem;
 }
 
+.w-\[8or\] {
+  width: 8or;
+}
+
+.w-\[80rem\] {
+  width: 80rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
