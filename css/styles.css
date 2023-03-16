@@ -1131,6 +1131,12 @@ main.main-section {
   }
 }
 
+@media (min-width: 1024px) {
+  .app-navigation {
+    left: 5%;
+  }
+}
+
 .nav-container {
   display: flex;
   height: 100%;
@@ -2487,12 +2493,12 @@ form p a:active {
     height: auto;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:gap-24 {
@@ -2555,12 +2561,12 @@ form p a:active {
     min-height: 0px;
   }
 
-  .lg\:max-w-\[120rem\] {
-    max-width: 120rem;
-  }
-
   .lg\:max-w-4xl {
     max-width: 56rem;
+  }
+
+  .lg\:max-w-\[120rem\] {
+    max-width: 120rem;
   }
 
   .lg\:translate-x-0 {
