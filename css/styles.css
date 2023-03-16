@@ -1081,7 +1081,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 
 @media (min-width: 768px) {
   .balance-card {
-    /* max-width: 100%; */
+    width: 100%;
   }
 }
 
@@ -2026,6 +2026,10 @@ form p a:active {
   margin-right: auto;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
@@ -2066,10 +2070,6 @@ form p a:active {
   margin-bottom: 1rem;
 }
 
-.ml-4 {
-  margin-left: 1rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -2098,6 +2098,10 @@ form p a:active {
   display: grid;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -2124,14 +2128,6 @@ form p a:active {
 
 .h-auto {
   height: auto;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-96 {
-  height: 24rem;
 }
 
 .min-h-screen {
@@ -2676,12 +2672,6 @@ form p a:active {
   .lg\:text-\[\#121127\] {
     --tw-text-opacity: 1;
     color: rgb(18 17 39 / var(--tw-text-opacity));
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
