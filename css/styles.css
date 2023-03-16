@@ -1677,11 +1677,12 @@ form p a:active {
 
 /* TRANSACTION PAGE STYLES */
 
-#transaction-form .form-group, .flex-group {
+#transaction-form .field {
+  margin-top: 0.75rem;
   width: 100%;
 }
 
-#transaction-form .form-group label {
+#transaction-form .field label {
   margin-bottom: 1rem;
   display: block;
   font-size: 1.25rem;
@@ -1691,7 +1692,7 @@ form p a:active {
   color: rgb(2 41 90 / var(--tw-text-opacity));
 }
 
-#transaction-form .form-group .form-control {
+#transaction-form .field .form-control {
   margin-bottom: 1rem;
   height: 100%;
   width: 100%;
@@ -1707,23 +1708,23 @@ form p a:active {
   padding-left: 0.75rem;
 }
 
-#transaction-form .form-group select.form-control, #transaction-form .form-group select.form-control option {
+#transaction-form .field select.form-control, #transaction-form .field select.form-control option {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 400;
 }
 
-#transaction-form .form-group select.form-control {
+#transaction-form .field select.form-control {
   --tw-text-opacity: 1;
   color: rgb(33 37 41 / var(--tw-text-opacity));
 }
 
-#transaction-form .form-group select.form-control option {
+#transaction-form .field select.form-control option {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-#transaction-form .form-group .form-control:focus {
+#transaction-form .field .form-control:focus {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
   --tw-border-opacity: 1;
   border-color: rgb(134 183 254 / var(--tw-border-opacity));
@@ -2159,10 +2160,6 @@ form p a:active {
   max-width: 100%;
 }
 
-.max-w-7xl {
-  max-width: 80rem;
-}
-
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -2539,14 +2536,6 @@ form p a:active {
     display: none;
   }
 
-  .sm\:max-w-6xl {
-    max-width: 72rem;
-  }
-
-  .sm\:max-w-7xl {
-    max-width: 80rem;
-  }
-
   .sm\:leading-\[4\.5rem\] {
     line-height: 4.5rem;
   }
@@ -2621,16 +2610,12 @@ form p a:active {
     min-height: 0px;
   }
 
-  .lg\:max-w-4xl {
-    max-width: 56rem;
+  .lg\:max-w-7xl {
+    max-width: 80rem;
   }
 
   .lg\:max-w-\[125rem\] {
     max-width: 125rem;
-  }
-
-  .lg\:max-w-7xl {
-    max-width: 80rem;
   }
 
   .lg\:translate-x-0 {
