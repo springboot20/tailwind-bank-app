@@ -1728,6 +1728,12 @@ form p a:active {
   transition-duration: 150ms;
 }
 
+@media (min-width: 768px) {
+  .notification-message, .error-notification-message {
+    width: 450px;
+  }
+}
+
 .notification-message::before,
 	.error-notification-message::before {
   position: absolute;
@@ -2045,10 +2051,6 @@ form p a:active {
   width: 4rem;
 }
 
-.w-12 {
-  width: 3rem;
-}
-
 .min-w-full {
   min-width: 100%;
 }
@@ -2304,11 +2306,6 @@ form p a:active {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .font-semibold {
