@@ -19,7 +19,7 @@ const showMenu = (openId, menuId, searchId, barId) => {
 			menu.classList.toggle('open')
 		})
 		menuBtn.addEventListener('click', () => {
-			menu.classList.toggle('open');
+			menu.classList.add('open');
 		})
 	}
 }
