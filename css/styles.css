@@ -2121,6 +2121,14 @@ form p a:active {
   width: 4rem;
 }
 
+.w-\[900rem\] {
+  width: 900rem;
+}
+
+.w-\[90rem\] {
+  width: 90rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -2135,6 +2143,18 @@ form p a:active {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[90rem\] {
+  max-width: 90rem;
+}
+
+.max-w-\[900rem\] {
+  max-width: 900rem;
+}
+
+.max-w-\[190rem\] {
+  max-width: 190rem;
 }
 
 .flex-shrink-0 {
@@ -2593,6 +2613,10 @@ form p a:active {
 
   .lg\:max-w-\[120rem\] {
     max-width: 120rem;
+  }
+
+  .lg\:max-w-\[125rem\] {
+    max-width: 125rem;
   }
 
   .lg\:translate-x-0 {
