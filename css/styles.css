@@ -2133,6 +2133,18 @@ form p a:active {
   width: 4rem;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[44rem\] {
+  width: 44rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -2147,6 +2159,14 @@ form p a:active {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.max-w-\[100rem\] {
+  max-width: 100rem;
 }
 
 .flex-shrink-0 {
@@ -2525,6 +2545,10 @@ form p a:active {
     display: none;
   }
 
+  .sm\:max-w-6xl {
+    max-width: 72rem;
+  }
+
   .sm\:leading-\[4\.5rem\] {
     line-height: 4.5rem;
   }
@@ -2533,6 +2557,10 @@ form p a:active {
 @media (min-width: 768px) {
   .md\:h-auto {
     height: auto;
+  }
+
+  .md\:max-w-6xl {
+    max-width: 72rem;
   }
 
   .md\:grid-cols-2 {
