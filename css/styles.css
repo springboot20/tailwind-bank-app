@@ -473,7 +473,7 @@ body {
   }
 
   .content-container, .transfer-container {
-    margin-left: -7rem;
+    margin-left: -6rem;
   }
 
   .notification-container {
@@ -1067,7 +1067,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   box-shadow: 0 0 10px rgb(0 0 0 / 30%);
   position: relative;
   height: 16rem;
-  width: 42rem;
+  width: 44rem;
   border-radius: 1rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1148,6 +1148,12 @@ main.main-section {
 
 @media (min-width: 640px) {
   .app-navigation {
+    left: 13%;
+  }
+}
+
+@media (min-width: 768px) {
+  .app-navigation {
     left: 10%;
   }
 }
@@ -1155,6 +1161,12 @@ main.main-section {
 @media (min-width: 1024px) {
   .app-navigation {
     left: 5%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .app-navigation {
+    left: 7%;
   }
 }
 
@@ -2121,22 +2133,6 @@ form p a:active {
   width: 4rem;
 }
 
-.w-\[900rem\] {
-  width: 900rem;
-}
-
-.w-\[90rem\] {
-  width: 90rem;
-}
-
-.w-\[8or\] {
-  width: 8or;
-}
-
-.w-\[80rem\] {
-  width: 80rem;
-}
-
 .min-w-full {
   min-width: 100%;
 }
@@ -2151,18 +2147,6 @@ form p a:active {
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[90rem\] {
-  max-width: 90rem;
-}
-
-.max-w-\[900rem\] {
-  max-width: 900rem;
-}
-
-.max-w-\[190rem\] {
-  max-width: 190rem;
 }
 
 .flex-shrink-0 {
@@ -2617,10 +2601,6 @@ form p a:active {
 
   .lg\:max-w-4xl {
     max-width: 56rem;
-  }
-
-  .lg\:max-w-\[120rem\] {
-    max-width: 120rem;
   }
 
   .lg\:max-w-\[125rem\] {
