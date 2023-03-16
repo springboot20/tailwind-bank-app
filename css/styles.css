@@ -1164,13 +1164,13 @@ main.main-section {
 
 @media (min-width: 1024px) {
   .app-navigation {
-    left: 5%;
+    left: 7%;
   }
 }
 
 @media (min-width: 1280px) {
   .app-navigation {
-    left: 7%;
+    left: 6%;
   }
 }
 
