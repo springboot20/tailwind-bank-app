@@ -799,6 +799,11 @@ body {
   color: rgb(17 6 85 / var(--tw-text-opacity));
 }
 
+.dark .nav-menu-container .user-icon {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .nav-menu-container .user-info {
   display: flex;
   flex-direction: column;
@@ -810,12 +815,22 @@ body {
   transition-duration: 150ms;
 }
 
+.dark .nav-menu-container .user-info {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .nav-menu-container .user-info .user-email, .nav-menu-container .user-info .user-name {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.dark .nav-menu-container .user-info .user-email, .dark .nav-menu-container .user-info .user-name {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .nav-menu-container .user-info .user-name {
@@ -909,8 +924,6 @@ ul.nav-menu li.nav-item a.nav-link:hover::after {
   width: 0.3em;
   border-top-left-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 88 66 / var(--tw-bg-opacity));
 }
 
 .nav-menu-container ul.nav-menu li.nav-item a.nav-link.active::after {
@@ -1006,6 +1019,11 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   color: rgb(17 16 29 / var(--tw-text-opacity));
 }
 
+.dark ul.nav-menu li.nav-item .search-box span.search-icon {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .nav-menu-container ul.nav-menu li.nav-item span.tooltip {
   position: absolute;
   top: 0px;
@@ -1063,6 +1081,11 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 .nav-menu-container .log-out-container a span {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.dark .nav-menu-container .log-out-container a span {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .nav-menu-container .log-out-container a span.log-out-label {

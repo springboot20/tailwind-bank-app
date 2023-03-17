@@ -30,7 +30,6 @@ const light = () => {
 
 if (currentTheme == 'dark') {
   dark();
-  toggleBtn.checked = true
 } else {
   light();
 }
