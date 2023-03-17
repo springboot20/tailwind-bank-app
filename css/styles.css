@@ -494,9 +494,9 @@ body {
     width: 44rem;
   }
 
-  .main-container {
-    width: 415px;
-  }
+  /*.main-container {
+			@apply w-[415px];
+		}*/
 
   h2.form-title {
     font-size: 1.875rem;
