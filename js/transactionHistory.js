@@ -6,6 +6,7 @@ import showMenu, { addActive, loadDetails } from "./helper.js";
 	addActive('active', 'a');
 	loadDetails('user-email', 'user-name');
 })();
+
 const toggleBtn = document.querySelector(`#checkbox`);
 let currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
@@ -26,7 +27,6 @@ toggleBtn.addEventListener('change', () => {
 	currentTheme = localStorage.getItem('theme')
 	currentTheme !== 'dark' ? dark() : light()
 })
-toggleBtn.addEventListener('change', darkSwitch, false)
 
 let AllUserAccounts = [];
 let transactionInHistory = [];
