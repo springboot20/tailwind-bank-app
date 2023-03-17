@@ -15,20 +15,20 @@ import showMenu, { addActive, loadDetails } from "./helper.js"
 addEventListener('load', () => {
   document.body.classList.add('loaded');
 })
-
 const toggleBtn = document.querySelector(`#checkbox`);
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null
+
 const darkSwitch = () => {
   if (currentTheme) {
     if (toggleBtn.checked && currentTheme === 'dark') {
-      document.documentElement.setAttribute('data-theme', currentTheme)
+      document.documentElement.setAttribute('class', currentTheme)
     }
   }
   if (toggleBtn.checked) {
-    document.documentElement.setAttribute('data-theme', 'dark')
+    document.documentElement.setAttribute('class', 'dark')
     localStorage.setItem('theme', 'dark')
   } else {
-    document.documentElement.setAttribute('data-theme', 'light')
+    document.documentElement.setAttribute('class', 'light')
     localStorage.setItem('theme', 'light')
   }
 }
