@@ -455,8 +455,7 @@ body {
 
   main.main-section {
     position: absolute;
-    left: 84px !important;
-    width: calc(100% - 95px) !important;
+    left: 0;
   }
 
   .app-navigation {
@@ -1177,7 +1176,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   box-shadow: 0 0 10px rgb(0 0 0 / 30%);
   position: relative;
   height: 16rem;
-  width: 100%;
+  width: 44rem;
   border-radius: 1rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1185,7 +1184,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   padding-right: 1rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .balance-card {
     width: 100%;
   }
@@ -2260,10 +2259,6 @@ form p a:active {
   min-width: 100%;
 }
 
-.max-w-6xl {
-  max-width: 72rem;
-}
-
 .max-w-screen-2xl {
   max-width: 1536px;
 }
@@ -2412,16 +2407,16 @@ form p a:active {
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .p-6 {
   padding: 1.5rem;
 }
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-5 {
@@ -2646,14 +2641,6 @@ form p a:active {
 
   .sm\:hidden {
     display: none;
-  }
-
-  .sm\:p-8 {
-    padding: 2rem;
-  }
-
-  .sm\:p-4 {
-    padding: 1rem;
   }
 
   .sm\:p-6 {
