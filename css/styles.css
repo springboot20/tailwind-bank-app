@@ -1233,7 +1233,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 
 main.main-section {
   position: absolute;
-  left: 84px;
+  /* left: 84px; */
   width: calc(100% - 84px);
 }
 

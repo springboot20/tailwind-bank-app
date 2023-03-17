@@ -57,24 +57,7 @@ function loadDetails(emailId, nameId) {
 
 
 
-const darkSwitch = (toggleId) => {
-	const toggleBtn = document.querySelector(`.${toggleId} darkSwitch('.toggle-switch input[type="checkbox"]`);
 
-	const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null
-	if (currentTheme) {
-		if (toggleBtn.checked && currentTheme === 'dark') {
-			document.documentElement.setAttribute('data-theme', currentTheme)
-		}
-	}
-	if (toggleBtn.checked) {
-		document.documentElement.setAttribute('data-theme', 'dark')
-		localStorage.setItem('theme', 'dark')
-	} else {
-		document.documentElement.setAttribute('data-theme', 'light')
-		localStorage.setItem('theme', 'light')
-	}
-	toggleBtn.addEventListener('change', darkSwitch, false)
-}
 
 export default showMenu
-export { addActive, loadDetails, darkSwitch }
+export { addActive, loadDetails}
