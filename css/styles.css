@@ -2077,6 +2077,12 @@ form p a:active {
   right: 20px;
 }
 
+@media (min-width: 768px) {
+  .transfer-container .container {
+    margin-left: 13rem;
+  }
+}
+
 .visible {
   visibility: visible;
 }
