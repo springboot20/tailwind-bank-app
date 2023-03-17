@@ -449,7 +449,7 @@ body {
 
 @media screen and (max-width: 425px) {
   .main-container {
-    width: 385px;
+    width: 345px;
   }
 
   h2.form-title {
