@@ -1123,6 +1123,14 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   opacity: 0;
 }
 
+.dark .nav-menu-container .log-out .mode span.sun {
+  opacity: 1;
+}
+
+.dark .nav-menu-container .log-out .mode span.moon {
+  opacity: 0;
+}
+
 .nav-menu-container .log-out .mode span.txt {
   white-space: nowrap;
   font-size: 1.25rem;
@@ -1161,7 +1169,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
           appearance: none;
   border-radius: 20px;
   --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1171,7 +1179,16 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   position: absolute;
   content: "";
   height: 22px;
-  background: #fff;
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.dark .toggle-switch input[type="checkbox"]::after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.toggle-switch input[type="checkbox"]::after {
   width: 22px;
   border-radius: 50%;
   top: 0;
