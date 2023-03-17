@@ -2655,6 +2655,18 @@ form p a:active {
 }
 
 @media (min-width: 768px) {
+  .md\:ml-16 {
+    margin-left: 4rem;
+  }
+
+  .md\:ml-8 {
+    margin-left: 2rem;
+  }
+
+  .md\:ml-4 {
+    margin-left: 1rem;
+  }
+
   .md\:h-auto {
     height: auto;
   }
@@ -2778,6 +2790,22 @@ form p a:active {
 
   .lg\:bg-transparent {
     background-color: transparent;
+  }
+
+  .lg\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .lg\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .lg\:pl-1 {
+    padding-left: 0.25rem;
+  }
+
+  .lg\:pl-14 {
+    padding-left: 3.5rem;
   }
 
   .lg\:text-\[\#121127\] {
