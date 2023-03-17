@@ -58,7 +58,7 @@ function loadDetails(emailId, nameId) {
 
 
 const darkSwitch = (toggleId) => {
-	const toggleBtn = document.querySelector(`.${toggleId}`)
+	const toggleBtn = document.querySelector(`.${toggleId} darkSwitch('.toggle-switch input[type="checkbox"]`);
 
 	const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null
 	if (currentTheme) {
