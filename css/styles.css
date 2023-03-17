@@ -869,6 +869,7 @@ ul.nav-menu li.nav-item a.nav-link {
 }
 
 ul.nav-menu li.nav-item a.nav-link span.link-name, .nav-menu-container .log-out-container a span.log-out-label {
+  pointer-events: none;
   opacity: 0;
 }
 
@@ -1012,6 +1013,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 }
 
 .nav-menu-container.open ul.nav-menu li.nav-item:hover span.tooltip {
+  pointer-events: none;
   opacity: 0;
 }
 
@@ -1051,7 +1053,6 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 }
 
 .nav-menu-container .log-out-container span.fas {
-  margin-left: 1rem;
   font-size: 1.875rem;
   line-height: 2.25rem;
   transition-property: all;
@@ -2655,18 +2656,6 @@ form p a:active {
 }
 
 @media (min-width: 768px) {
-  .md\:ml-16 {
-    margin-left: 4rem;
-  }
-
-  .md\:ml-8 {
-    margin-left: 2rem;
-  }
-
-  .md\:ml-4 {
-    margin-left: 1rem;
-  }
-
   .md\:h-auto {
     height: auto;
   }
@@ -2790,18 +2779,6 @@ form p a:active {
 
   .lg\:bg-transparent {
     background-color: transparent;
-  }
-
-  .lg\:pl-8 {
-    padding-left: 2rem;
-  }
-
-  .lg\:pl-12 {
-    padding-left: 3rem;
-  }
-
-  .lg\:pl-1 {
-    padding-left: 0.25rem;
   }
 
   .lg\:pl-14 {
