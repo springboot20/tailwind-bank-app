@@ -1,31 +1,34 @@
 /**
  * FORM SCRIPT SCOPE
 */
-import showMenu, { addActive, loadDetails} from "./helper.js"
+import showMenu, { addActive, loadDetails } from "./helper.js"
 
 (() => {
 	showMenu('show-icon', 'nav-menu-container', 'search-icon', 'fa-bars');
 	addActive('active', 'a');
 	loadDetails('user-email', 'user-name');
 })();
-const toggleBtn = document.querySelector(`#checkbox`);
-const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null
 
-const darkSwitch = () => {
-	if (currentTheme) {
-		if (toggleBtn.checked && currentTheme === 'dark') {
-			document.documentElement.setAttribute('class', currentTheme)
-		}
-	}
-	if (toggleBtn.checked) {
-		document.documentElement.setAttribute('class', 'dark')
-		localStorage.setItem('theme', 'dark')
-	} else {
-		document.documentElement.setAttribute('class', 'light')
-		localStorage.setItem('theme', 'light')
-	}
+const toggleBtn = document.querySelector(`#checkbox`);
+let currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+const dark = () => {
+	document.documentElement.setAttribute('class', 'dark')
+	localStorage.setItem('theme', 'dark')
 }
-toggleBtn.addEventListener('change', darkSwitch, false)
+
+const light = () => {
+	document.documentElement.setAttribute('class', 'light')
+	localStorage.setItem('theme', 'light')
+}
+
+if (currentTheme === 'dark') {
+	dark();
+}
+toggleBtn.addEventListener('change', () => {
+	currentTheme = localStorage.getItem('theme')
+	currentTheme !== 'dark' ? dark() : light()
+})
 
 let AllUserAccounts = [];
 let transactionsInHistory = [];

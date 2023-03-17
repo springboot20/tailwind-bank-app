@@ -429,6 +429,11 @@ body {
   background-color: rgb(236 240 243 / var(--tw-bg-opacity));
 }
 
+.dark body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
