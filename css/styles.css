@@ -1127,7 +1127,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   opacity: 1;
 }
 
-.dark .nav-menu-container .log-out .mode span.moon {
+.dark .nav-menu-container.open .log-out .mode span.moon {
   opacity: 0;
 }
 
