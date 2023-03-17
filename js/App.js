@@ -28,7 +28,7 @@ const light = () => {
   localStorage.setItem('theme', 'null')
 }
 
-if (currentTheme == 'dark') {
+if (currentTheme === 'dark') {
   dark();
 } else {
   light();
