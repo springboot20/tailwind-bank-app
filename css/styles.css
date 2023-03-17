@@ -447,7 +447,28 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 425px) {
+  .main-container {
+    width: 385px;
+  }
+
+  h2.form-title {
+    font-size: 1.8em;
+  }
+
+  p.form-text {
+    margin-top: 0;
+    font-size: 0.75em;
+  }
+
+  form {
+    padding: 15px 20px;
+  }
+
+  .form-container button.btn {
+    padding: 0.65rem;
+  }
+
   .nav-menu-container {
     --tw-translate-x: -200%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -492,32 +513,6 @@ body {
 
   .profile-container {
     width: 44rem;
-  }
-
-  /*.main-container {
-			@apply w-[415px];
-		}*/
-
-  h2.form-title {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  p.form-text {
-    margin-top: 0px;
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
-  form {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 0px;
-    padding-right: 1.25rem;
-  }
-
-  .form-container button.btn {
-    padding: 0.65rem;
   }
 }
 
