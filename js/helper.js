@@ -77,4 +77,4 @@ const darkSwitch = (toggleId) => {
 }
 
 export default showMenu
-export { addActive, loadDetails, loadDetails }
+export { addActive, loadDetails, darkSwitch }
