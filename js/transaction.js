@@ -1,8 +1,9 @@
-import showMenu, {addActive, loadDetails} from "./helper.js";
+import showMenu, {addActive, loadDetails, darkSwitch} from "./helper.js";
 
 (() => {
 	showMenu("show-icon", "nav-menu-container", "search-icon", "fa-bars");
-	loadDetails('user-email', 'user-name')
+	loadDetails('user-email', 'user-name');
+	darkSwitch('.toggle-switch input[type="checkbox"]')
 })();
 
 addEventListener("load", () => {

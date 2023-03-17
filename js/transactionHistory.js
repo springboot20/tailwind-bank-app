@@ -1,9 +1,10 @@
 //template
-import showMenu, { addActive, loadDetails } from "./helper.js";
+import showMenu, { addActive, loadDetails, darkSwitch } from "./helper.js";
 
 (() => {
 	showMenu('show-icon', 'nav-menu-container', 'search-icon', 'fa-bars');
 	addActive('active', 'a');
+	darkSwitch('.toggle-switch input[type="checkbox"]')
 	loadDetails('user-email', 'user-name');
 })();
 
