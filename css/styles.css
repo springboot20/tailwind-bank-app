@@ -452,6 +452,10 @@ body {
     width: 345px !important;
   }
 
+  .transfer-container .container {
+    padding: 0 !important;
+  }
+
   h2.form-title {
     font-size: 1.8em;
   }
@@ -2074,12 +2078,6 @@ form p a:active {
 .fa-circle-check {
   position: absolute;
   right: 20px;
-}
-
-@media (min-width: 768px) {
-  .transfer-container .container {
-    margin-left: 13rem;
-  }
 }
 
 .visible {
