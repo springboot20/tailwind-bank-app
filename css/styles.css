@@ -449,11 +449,7 @@ body {
 
 @media screen and (max-width: 425px) {
   .main-container {
-    width: 345px;
-  }
-
-  #main-container .container {
-    padding: 8rem;
+    width: 345px !important;
   }
 
   h2.form-title {
@@ -463,6 +459,10 @@ body {
   p.form-text {
     margin-top: 0;
     font-size: 0.75em;
+  }
+
+  .balance-card {
+    width: 33.5rem !important;
   }
 
   form {
@@ -1175,7 +1175,6 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   box-shadow: 0 0 10px rgb(0 0 0 / 30%);
   position: relative;
   height: 16rem;
-  width: 44rem;
   border-radius: 1rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
