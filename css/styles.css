@@ -452,6 +452,10 @@ body {
     width: 345px;
   }
 
+  #main-container .container {
+    padding: 2rem;
+  }
+
   h2.form-title {
     font-size: 1.8em;
   }
