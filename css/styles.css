@@ -2648,6 +2648,18 @@ form p a:active {
     display: none;
   }
 
+  .sm\:p-8 {
+    padding: 2rem;
+  }
+
+  .sm\:p-4 {
+    padding: 1rem;
+  }
+
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
+
   .sm\:leading-\[4\.5rem\] {
     line-height: 4.5rem;
   }
@@ -2680,6 +2692,10 @@ form p a:active {
 
   .md\:bg-none {
     background-image: none;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
   }
 
   .md\:px-10 {
