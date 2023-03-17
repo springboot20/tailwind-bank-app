@@ -1012,6 +1012,10 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   opacity: 0;
 }
 
+.nav-menu-container .log-out {
+  margin-left: -0.75rem;
+}
+
 .nav-menu-container .log-out .log-out-container {
   width: 100%;
   border-radius: 0.5rem;
@@ -1048,8 +1052,16 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 }
 
 .nav-menu-container .log-out-container span.fas {
+  margin-left: 1rem;
   font-size: 1.875rem;
   line-height: 2.25rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.nav-menu-container.open .log-out-container span.fas {
+  margin-left: 0px;
 }
 
 .nav-menu-container .log-out .mode {
@@ -1108,7 +1120,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 
 .nav-menu-container .log-out .toggle-switch {
   position: absolute;
-  right: -0.25rem;
+  right: 0px;
   display: flex;
   height: 100%;
   min-width: 60px;
