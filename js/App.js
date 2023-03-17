@@ -16,7 +16,7 @@ addEventListener('load', () => {
   document.body.classList.add('loaded');
 })
 const toggleBtn = document.querySelector(`#checkbox`);
-let currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+let currentTheme = localStorage.getItem('theme');
 
 const dark = () => {
   document.documentElement.setAttribute('class', 'dark')
@@ -25,12 +25,16 @@ const dark = () => {
 
 const light = () => {
   document.documentElement.setAttribute('class', 'light')
-  localStorage.setItem('theme', 'light')
+  localStorage.setItem('theme', 'null')
 }
 
-if (currentTheme === 'dark') {
+if (currentTheme == 'dark') {
   dark();
+  toggleBtn.checked = true
+} else {
+  light();
 }
+
 toggleBtn.addEventListener('change', () => {
   currentTheme = localStorage.getItem('theme')
   currentTheme !== 'dark' ? dark() : light()

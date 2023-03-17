@@ -16,7 +16,7 @@ const dark = () => {
 
 const light = () => {
 	document.documentElement.setAttribute('class', 'light')
-	localStorage.setItem('theme', 'light')
+	localStorage.setItem('theme', 'null')
 }
 
 if (currentTheme === 'dark') {
