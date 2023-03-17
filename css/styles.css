@@ -1053,6 +1053,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 }
 
 .nav-menu-container .log-out .mode {
+  position: relative;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -1091,12 +1092,23 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 }
 
 .nav-menu-container .log-out .mode span.txt {
+  white-space: nowrap;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.nav-menu-container.open .log-out .mode span.txt {
+  opacity: 1;
 }
 
 .nav-menu-container .log-out .toggle-switch {
+  position: absolute;
+  left: -25px;
   display: flex;
   height: 100%;
   min-width: 60px;
@@ -1104,10 +1116,14 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   justify-content: center;
 }
 
+.nav-menu-container.open .log-out .toggle-switch {
+  right: -90px;
+}
+
 .toggle-switch input[type="checkbox"] {
   position: relative;
   height: 22px;
-  width: 50px;
+  width: 44px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1122,9 +1138,9 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 .toggle-switch input[type="checkbox"]::after {
   position: absolute;
   content: "";
-  height: 25px;
+  height: 22px;
   background: #fff;
-  width: 25px;
+  width: 22px;
   border-radius: 50%;
   top: 0;
   transform: scale(0.7);
@@ -1132,7 +1148,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 }
 
 .toggle-switch input[type="checkbox"]:checked::after {
-  left: calc(100% - 30px);
+  left: calc(100% - 22px);
 }
 
 .notification-container span.notification-icon::after {
