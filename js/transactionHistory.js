@@ -35,7 +35,7 @@ import showMenu, { addActive, loadDetails } from "./helper.js";
 
 	if (!pref) {
 		let preferTheme = (theme) => {
-			return `(prefer-color-scheme: ${theme})`
+			return `(prefers-color-scheme: ${theme})`
 		}
 
 		if (win.matchMedia(preferTheme(dark)).matches) {
