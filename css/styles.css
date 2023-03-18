@@ -1332,25 +1332,25 @@ main.main-section {
 
 @media (min-width: 768px) {
   .app-navigation {
-    left: 10%;
+    left: 11.5%;
   }
 }
 
 @media (min-width: 1024px) {
   .app-navigation {
-    left: 7%;
+    left: 9%;
   }
 }
 
 @media (min-width: 1280px) {
   .app-navigation {
-    left: 6%;
+    left: 6.7%;
   }
 }
 
 @media (min-width: 1536px) {
   .app-navigation {
-    left: 4%;
+    left: 4.7%;
   }
 }
 
