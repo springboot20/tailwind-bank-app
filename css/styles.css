@@ -1403,6 +1403,11 @@ main.main-section {
   color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
+.dark .logo-name {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .notification-container {
   margin-right: 1rem;
   display: flex;
@@ -1499,6 +1504,11 @@ p.form-text {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(2 41 90 / var(--tw-text-opacity));
+}
+
+.dark .form-container .field label {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .field .input-container {
@@ -1866,6 +1876,11 @@ form p a:active {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(2 41 90 / var(--tw-text-opacity));
+}
+
+.dark #transaction-form .field label {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 #transaction-form .field .form-control {
