@@ -2267,6 +2267,10 @@ form p a:active {
   margin-right: 0.5rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -2489,6 +2493,10 @@ form p a:active {
 .bg-red-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.fill-indigo-700 {
+  fill: #4338ca;
 }
 
 .p-6 {
@@ -2715,6 +2723,20 @@ form p a:active {
 .hover\:ring-indigo-400:hover {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(129 140 248 / var(--tw-ring-opacity));
+}
+
+.dark .dark\:fill-slate-100 {
+  fill: #f1f5f9;
+}
+
+.dark .dark\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
