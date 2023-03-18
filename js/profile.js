@@ -20,7 +20,7 @@ import showMenu, { addActive, loadDetails } from "./helper.js";
 	let toggle = doc.getElementById('checkbox');
 
 	let defaultTheme = light;
-	let active =( defaultTheme === dark);
+	let active = (defaultTheme === dark);
 
 	let activateTheme = (theme) => {
 		ele.classList.remove(dark, light);
@@ -34,7 +34,7 @@ import showMenu, { addActive, loadDetails } from "./helper.js";
 
 	if (!pref) {
 		let preferTheme = (theme) => {
-			return `(prefer-color-scheme: ${theme})`
+			return `(prefers-color-scheme: ${theme})`
 		}
 
 		if (win.matchMedia(preferTheme(dark)).matches) {
@@ -66,7 +66,6 @@ import showMenu, { addActive, loadDetails } from "./helper.js";
 			}
 		}, true)
 	}
-
 })();
 
 const firstName = document.querySelector('.first');
