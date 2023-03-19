@@ -2587,7 +2587,7 @@ form p a:active {
 }
 
 .text-6xl {
-  font-size: 3.75rem;
+  /* font-size: 3.75rem; */
   line-height: 1;
 }
 
