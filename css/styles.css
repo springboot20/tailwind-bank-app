@@ -1194,7 +1194,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   box-shadow: 0 0 10px rgb(0 0 0 / 30%);
   position: relative;
   height: 20rem;
-  width: 33rem;
+  /* width: 33rem; */
   border-radius: 1rem;
   --tw-bg-opacity: 1;
   background-color: rgb(242 243 255 / var(--tw-bg-opacity));
