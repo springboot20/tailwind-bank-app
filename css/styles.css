@@ -1275,8 +1275,8 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 @media (min-width: 768px) {
   main.main-section {
     position: absolute;
-    left: 94px;
-    width: calc(100% - 94px);
+    left: 82px;
+    width: calc(100% - 82px);
   }
 }
 
@@ -1302,12 +1302,6 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 @media (min-width: 640px) {
   .app-navigation {
     left: 0px;
-  }
-}
-
-@media (min-width: 768px) {
-  .app-navigation {
-    left: 11%;
   }
 }
 
@@ -1833,8 +1827,17 @@ form p a:active {
 	PROFILE STYLES
 	*******************/
 
-.number, .name {
-  margin-top: 2rem;
+.number {
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.name {
   display: inline-block;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -2213,6 +2216,10 @@ form p a:active {
   margin-top: 0.5rem;
 }
 
+.mt-32 {
+  margin-top: 8rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -2227,10 +2234,6 @@ form p a:active {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-32 {
-  margin-top: 8rem;
 }
 
 .mt-4 {
@@ -2333,8 +2336,8 @@ form p a:active {
   min-width: 100%;
 }
 
-.max-w-4xl {
-  max-width: 56rem;
+.max-w-screen-md {
+  max-width: 768px;
 }
 
 .max-w-screen-2xl {
@@ -2746,6 +2749,11 @@ form p a:active {
 }
 
 @media (min-width: 768px) {
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:h-auto {
     height: auto;
   }
@@ -2762,10 +2770,8 @@ form p a:active {
     flex-direction: row;
   }
 
-  .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  .md\:gap-\[11rem\] {
+    gap: 11rem;
   }
 
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -2850,6 +2856,10 @@ form p a:active {
 
   .lg\:justify-center {
     justify-content: center;
+  }
+
+  .lg\:gap-96 {
+    gap: 24rem;
   }
 
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
