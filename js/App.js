@@ -75,6 +75,7 @@ addEventListener('load', () => {
     toggle.addEventListener('change', () => {
       if (active) {
         activateTheme(light)
+        modeText.textContent = 'light mode'
         storage.setItem(prefer_key, light)
       } else {
         activateTheme(dark)
