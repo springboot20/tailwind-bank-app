@@ -23,7 +23,7 @@ addEventListener("load", () => {
 	let light = 'light';
 	let toggle = doc.getElementById('checkbox');
 	let mode = storage.getItem('theme');
-	let modeTxt = doc.querySelector('.mode-txt')
+	let modeText = doc.querySelector('.mode-txt')
 
 	if (mode !== null && mode === dark) {
 		toggle.setAttribute('checked', true)
