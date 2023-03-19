@@ -738,12 +738,7 @@ body {
   font-size: 1.875rem;
   line-height: 2.25rem;
   --tw-text-opacity: 1;
-  color: rgb(17 6 85 / var(--tw-text-opacity));
-}
-
-.dark .nav-menu-container .user-icon {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  /* color: rgb(17 6 85 / var(--tw-text-opacity)); */
 }
 
 .nav-menu-container .user-info {
@@ -2447,6 +2442,10 @@ form p a:active {
 
 .text-ellipsis {
   text-overflow: ellipsis;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded-\[50\%\] {
