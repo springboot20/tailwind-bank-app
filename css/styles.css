@@ -1305,6 +1305,12 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   }
 }
 
+@media (min-width: 768px) {
+  .app-navigation {
+    left: 8%;
+  }
+}
+
 @media (min-width: 1024px) {
   .app-navigation {
     left: 8%;
@@ -2760,6 +2766,10 @@ form p a:active {
 
   .md\:max-w-screen-xl {
     max-width: 1280px;
+  }
+
+  .md\:max-w-screen-md {
+    max-width: 768px;
   }
 
   .md\:grid-cols-2 {
