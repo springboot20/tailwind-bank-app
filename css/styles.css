@@ -1165,20 +1165,20 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   align-items: center;
 }
 
-.notification-container span.fa-bars {
+.notification-container span.fa-bars:not(#open-btn) {
   font-size: 1.875rem;
   line-height: 2.25rem;
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.dark .notification-container span.fa-bars {
+.dark .notification-container span.fa-bars:not(#open-btn) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
-  .notification-container span.fa-bars {
+  .notification-container span.fa-bars:not(#open-btn) {
     display: none;
   }
 }
@@ -2744,10 +2744,6 @@ form p a:active {
     margin-bottom: 2.5rem;
   }
 
-  .sm\:max-w-6xl {
-    max-width: 72rem;
-  }
-
   .sm\:max-w-screen-sm {
     max-width: 640px;
   }
@@ -2769,10 +2765,6 @@ form p a:active {
 
   .md\:max-w-screen-md {
     max-width: 768px;
-  }
-
-  .md\:max-w-screen-xl {
-    max-width: 1280px;
   }
 
   .md\:grid-cols-2 {
