@@ -427,6 +427,9 @@ body {
   position: relative;
   --tw-bg-opacity: 1;
   background-color: rgb(236 240 243 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .dark body {
@@ -665,6 +668,7 @@ body {
   height: 2.5rem;
   width: 2.5rem;
   --tw-translate-y: -4%;
+  --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   cursor: pointer;
   align-items: center;
@@ -681,7 +685,7 @@ body {
 
 .nav-menu-container.open .show-icon {
   --tw-translate-y: -4%;
-  --tw-rotate: 180deg;
+  --tw-rotate: 0deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1132,7 +1136,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 }
 
 .toggle-switch input[type="checkbox"] {
-  /*visibility: hidden;*/
+  visibility: hidden;
   position: relative;
   height: 22px;
   width: 44px;
@@ -1172,6 +1176,18 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   left: calc(100% - 22px);
 }
 
+.notification-container {
+  display: flex;
+  align-items: center;
+}
+
+.notification-container span.fa-bars {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
 .notification-container span.notification-icon::after {
   content: "";
   position: absolute;
@@ -1188,7 +1204,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 		);
   box-shadow: 0 0 10px rgb(0 0 0 / 30%);
   position: relative;
-  height: 16rem;
+  height: 20rem;
   width: 33rem;
   border-radius: 1rem;
   padding-top: 1.25rem;
@@ -1823,6 +1839,8 @@ form p a:active {
 	*******************/
 
 .number, .name {
+  margin-top: 2rem;
+  display: inline-block;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -2357,6 +2375,10 @@ form p a:active {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -2719,10 +2741,6 @@ form p a:active {
     margin-bottom: 2.5rem;
   }
 
-  .sm\:hidden {
-    display: none;
-  }
-
   .sm\:max-w-6xl {
     max-width: 72rem;
   }
@@ -2751,6 +2769,12 @@ form p a:active {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {

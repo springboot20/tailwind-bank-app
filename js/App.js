@@ -85,7 +85,8 @@ addEventListener('load', () => {
 
 const amountInDollar = document.querySelector(".amount-in-dollar");
 const amountInNaira = document.querySelector(".amount-in-naira");
-const welcome = document.querySelector('.welcome-name')
+const welcome = document.querySelector('.welcome-name');
+let accountName = Array.from(document.querySelectorAll('.name'));
 
 const formatDollar = new Intl.NumberFormat("en-US", {
   currency: "USD",
@@ -100,12 +101,13 @@ const formatNaira = new Intl.NumberFormat("en-NG", {
 
 function setBalance() {
   let ind = JSON.parse(localStorage.getItem('user-index'));
-  let balance = JSON.parse(localStorage.getItem('users-accounts'));
+  let user = JSON.parse(localStorage.getItem('users-accounts'));
 
-  amountInNaira.textContent = formatNaira.format(`${Number(balance[ind]._balance)}`);
-  amountInDollar.textContent = formatDollar.format(`${Number(balance[ind]._balance)}`);
+  amountInNaira.textContent = formatNaira.format(`${Number(user[ind]._balance)}`);
+  amountInDollar.textContent = formatDollar.format(`${Number(user[ind]._balance)}`);
 
-  welcome.textContent = `${balance[ind].firstName} ${balance[ind].lastName}`
+  welcome.textContent = `${user[ind].firstName} ${user[ind].lastName}`
+  accountName.forEach((name) => name.textContent = `${user[ind].firstName} ${user[ind].lastName}`)
 }
 
 window.addEventListener('load', setBalance)
