@@ -2748,6 +2748,10 @@ form p a:active {
     max-width: 72rem;
   }
 
+  .sm\:max-w-screen-sm {
+    max-width: 640px;
+  }
+
   .sm\:leading-\[4\.5rem\] {
     line-height: 4.5rem;
   }
