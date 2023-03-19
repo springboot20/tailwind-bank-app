@@ -961,11 +961,6 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   color: rgb(17 16 29 / var(--tw-text-opacity));
 }
 
-.dark ul.nav-menu li.nav-item .search-box span.search-icon {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .nav-menu-container ul.nav-menu li.nav-item span.tooltip {
   position: absolute;
   top: 0px;
@@ -2747,10 +2742,6 @@ form p a:active {
 }
 
 @media (min-width: 768px) {
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:h-auto {
     height: auto;
   }
