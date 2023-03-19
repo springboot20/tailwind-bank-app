@@ -2733,6 +2733,10 @@ form p a:active {
 }
 
 @media (min-width: 768px) {
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:h-auto {
     height: auto;
   }
