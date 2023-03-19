@@ -2375,7 +2375,7 @@ form p a:active {
 }
 
 .flex-wrap {
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .items-start {
