@@ -1087,6 +1087,10 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   opacity: 1;
 }
 
+.nav-menu-container.open .log-out .mode span.moon {
+  opacity: 1;
+}
+
 .dark .nav-menu-container.open .log-out .mode span.moon {
   opacity: 0;
 }
@@ -2342,10 +2346,6 @@ form p a:active {
   min-width: 100%;
 }
 
-.max-w-screen-md {
-  max-width: 768px;
-}
-
 .max-w-screen-2xl {
   max-width: 1536px;
 }
@@ -2764,12 +2764,12 @@ form p a:active {
     height: auto;
   }
 
-  .md\:max-w-screen-xl {
-    max-width: 1280px;
-  }
-
   .md\:max-w-screen-md {
     max-width: 768px;
+  }
+
+  .md\:max-w-screen-xl {
+    max-width: 1280px;
   }
 
   .md\:grid-cols-2 {

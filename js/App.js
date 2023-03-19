@@ -33,6 +33,7 @@ addEventListener('load', () => {
 
   if (mode !== null && mode === dark) {
     toggle.setAttribute('checked', true)
+    modeText.textContent = 'Dark mode'
   }
 
   let defaultTheme = light;
@@ -75,10 +76,11 @@ addEventListener('load', () => {
     toggle.addEventListener('change', () => {
       if (active) {
         activateTheme(light)
-        modeText.textContent = 'light mode'
+        modeText.textContent = 'Light mode'
         storage.setItem(prefer_key, light)
       } else {
         activateTheme(dark)
+        modeText.textContent = 'Dark mode'
         storage.setItem(prefer_key, dark)
       }
     }, true)
