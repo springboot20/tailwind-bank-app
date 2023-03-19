@@ -21,9 +21,10 @@ import showMenu, { addActive, loadDetails } from "./helper.js";
 	let mode = storage.getItem('theme');
 
 	if (mode !== null && mode === dark) {
-		toggle.setAttribute('checked', true)
+		toggle.setAttribute('checked', true);
+		modeText.textContent = 'Dark mode'
 	}
-	
+
 	let defaultTheme = light;
 	let active = (defaultTheme === dark);
 
@@ -63,11 +64,13 @@ import showMenu, { addActive, loadDetails } from "./helper.js";
 
 		toggle.addEventListener('change', () => {
 			if (active) {
-				activateTheme(light)
+				activateTheme(light);
+				modeText.textContent = 'Light mode'
 				storage.setItem(prefer_key, light)
 			} else {
-				activateTheme(dark)
-				storage.setItem(prefer_key, dark)
+				activateTheme(dark);
+				modeText.textContent = 'Dark mode'
+				storage.setItem(prefer_key, dark);
 			}
 		}, true)
 	}
