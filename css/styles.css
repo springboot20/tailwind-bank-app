@@ -738,7 +738,7 @@ body {
   font-size: 1.875rem;
   line-height: 2.25rem;
   --tw-text-opacity: 1;
-  /* color: rgb(17 6 85 / var(--tw-text-opacity)); */
+  color: rgb(17 6 85 / var(--tw-text-opacity));
 }
 
 .nav-menu-container .user-info {
@@ -805,7 +805,6 @@ body {
   position: relative;
   height: 50px;
   width: 100%;
-  cursor: pointer;
   opacity: 1;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -957,6 +956,7 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 }
 
 .nav-menu-container ul.nav-menu li.nav-item span.tooltip {
+  pointer-events: none;
   position: absolute;
   top: 0px;
   left: 11rem;
