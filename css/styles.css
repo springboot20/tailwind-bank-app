@@ -1165,20 +1165,20 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   align-items: center;
 }
 
-.notification-container span.fa-bars:not(#open-btn) {
+.notification-container span.menuIcon {
   font-size: 1.875rem;
   line-height: 2.25rem;
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.dark .notification-container span.fa-bars:not(#open-btn) {
+.dark .notification-container span.menuIcon {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
-  .notification-container span.fa-bars:not(#open-btn) {
+  .notification-container span.menuIcon {
     display: none;
   }
 }
