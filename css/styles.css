@@ -706,10 +706,10 @@ body {
 
 .navigation .menu-bar {
   display: flex;
-  min-height: calc(100% - 50px);
+  min-height: 100%;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .navigation ul li {
