@@ -161,7 +161,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
 		setTimeout(() => {
 			window.location.href = document.querySelector('form').getAttribute('action');
 			success.classList.remove('active');
-		}, 1000)
+		}, 4500)
 	}
 
 	setTimeout(() => {
@@ -176,4 +176,3 @@ window.addEventListener('load', () => {
 	getPreviousBalance();
 	getPreviousTransactionInHistory();
 })
-

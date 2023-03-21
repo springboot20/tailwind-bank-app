@@ -156,7 +156,7 @@ const setBalance = () => {
 		setTimeout(() => {
 			window.location.href = transferForm.getAttribute('action');
 			success.classList.remove('active');
-		}, 1000)
+		}, 5000)
 	}
 
 	localStorage.setItem('users-accounts', JSON.stringify(AllUserAccounts));
@@ -188,7 +188,7 @@ transferForm.addEventListener("submit", (event) => {
 
 	setTimeout(() => {
 		error.classList.remove('active')
-	}, 5000);
+	}, 4500);
 
 	setTimeout(() => {
 		fields.forEach((field) => {
