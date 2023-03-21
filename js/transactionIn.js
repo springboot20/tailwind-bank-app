@@ -177,5 +177,3 @@ window.addEventListener('load', () => {
 	getPreviousTransactionInHistory();
 })
 
-
-//how to generate prime numbers using loop
