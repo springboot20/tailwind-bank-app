@@ -1,7 +1,7 @@
 import showMenu, { addActive } from "./helper.js";
 
 (() => {
-	showMenu("show-icon", "nav-menu-container", "search-icon", "fa-bars");
+	showMenu("show-icon", "navigation", "search-icon", "fa-bars");
 })();
 
 addEventListener("load", () => {

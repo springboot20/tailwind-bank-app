@@ -7,7 +7,7 @@ import showMenu, { addActive, loadDetails } from "./helper.js"
  */
 
 (() => {
-  showMenu('show-icon', 'nav-menu-container', 'search-icon', 'fa-bars');
+  showMenu('show-icon', 'navigation', 'search-icon', 'fa-bars');
   addActive('active', 'a');
 })()
 
