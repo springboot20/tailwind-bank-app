@@ -1167,6 +1167,12 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
     left: 82px;
     width: calc(100% - 82px);
   }
+
+  .navigation.open ~ main.main-section {
+    position: absolute;
+    left: 385px;
+    width: calc(100% - 385px);
+  }
 }
 
 .app-navigation {
@@ -1180,6 +1186,9 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .dark .app-navigation {
@@ -1191,6 +1200,11 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   .app-navigation {
     left: 7rem;
     width: calc(100% - 7rem);
+  }
+
+  .navigation.open ~ main.main-section .app-navigation {
+    left: 385px;
+    width: calc(100% - 385px);
   }
 }
 
