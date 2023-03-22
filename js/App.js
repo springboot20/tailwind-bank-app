@@ -1,4 +1,4 @@
-import showMenu, { addActive, loadDetails } from "./helper.js"
+import showMenu, { addActive } from "./helper.js"
 
 /**
  *
