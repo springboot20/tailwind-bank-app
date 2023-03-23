@@ -602,7 +602,6 @@ body {
   position: fixed;
   top: 0px;
   z-index: 40;
-  height: 100%;
   --tw-translate-x: -200%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   flex-direction: column;
@@ -706,7 +705,7 @@ body {
 
 .navigation .menu-bar {
   display: flex;
-  min-height: 100%;
+  min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 2rem;

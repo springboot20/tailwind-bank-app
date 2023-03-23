@@ -21,11 +21,16 @@ import showMenu, { addActive } from "./helper.js"
 	let light = 'light';
 	let toggle = doc.getElementById('checkbox');
 	let mode = storage.getItem('theme');
-	let modeText = doc.querySelector('.mode-txt')
+	let modeText = doc.querySelector('.mode-txt');
+	let moonIcon = doc.querySelector('.moon');
+	let sunIcon = doc.querySelector('.sun');
 
 	if (mode !== null && mode === dark) {
 		toggle.setAttribute('checked', true)
-		modeText.textContent = 'Dark mode'
+		modeText.textContent = 'Dark mode';
+
+		moonIcon.style.opacity = '1'
+		sunIcon.style.opacity = '0'
 	}
 
 	let defaultTheme = light;
@@ -69,11 +74,15 @@ import showMenu, { addActive } from "./helper.js"
 			if (active) {
 				activateTheme(light)
 				modeText.textContent = 'Light mode'
-				storage.setItem(prefer_key, light)
+				storage.setItem(prefer_key, light);
+				moonIcon.style.opacity = '0'
+				sunIcon.style.opacity = '1'
 			} else {
 				activateTheme(dark)
 				modeText.textContent = 'Dark mode'
-				storage.setItem(prefer_key, dark)
+				storage.setItem(prefer_key, dark);
+				moonIcon.style.opacity = '1'
+				sunIcon.style.opacity = '0'
 			}
 		}, true)
 	}
