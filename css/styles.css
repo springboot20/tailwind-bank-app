@@ -983,18 +983,6 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   opacity: 0;
 }
 
-.dark .navigation .log-out .mode span.sun {
-  opacity: 1;
-}
-
-.navigation.open .log-out .mode span.moon {
-  opacity: 1;
-}
-
-.dark .navigation.open .log-out .mode span.moon {
-  opacity: 0;
-}
-
 .navigation .log-out .mode span.txt {
   white-space: nowrap;
   font-size: 1.25rem;
