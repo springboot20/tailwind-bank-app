@@ -110,7 +110,7 @@ form.addEventListener("submit", (event) => {
  * @param {*} userField
  */
 const checkUsernameHandler = (usernameInput, userField) => {
-  if (usernameInput.value.length < 6) {
+  if (usernameInput.value.length < 8) {
     userField.classList.add("error");
     userField.classList.remove("valid");
 
