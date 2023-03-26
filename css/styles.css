@@ -636,7 +636,7 @@ body {
 
 @media (min-width: 1024px) {
   .navigation {
-    min-height: 100%;
+    min-height: 100vh;
     --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
@@ -705,7 +705,7 @@ body {
 
 .navigation .menu-bar {
   display: flex;
-  height: calc(100% - 50px);
+  min-height: calc(100% - 50px);
   flex-direction: column;
   justify-content: space-between;
   padding-top: 2rem;
@@ -1364,7 +1364,7 @@ form {
 }
 
 .input-container input,
-	.input-container select {
+  .input-container select {
   box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.2);
   height: 100%;
   width: 100%;
@@ -1403,9 +1403,9 @@ form {
 }
 
 form .field.shake input,
-	form .field.shake select,
-	form .field.error input:focus,
-	form .field.error select:focus {
+  form .field.shake select,
+  form .field.error input:focus,
+  form .field.error select:focus {
   box-shadow: 0 0 0 0.25rem rgba(244, 16, 16, 0.407);
   --tw-border-opacity: 1;
   border-color: rgb(247 88 66 / var(--tw-border-opacity));
@@ -1418,9 +1418,9 @@ form .field.shake input,
 }
 
 form .field input:focus,
-	form .field select:focus,
-	form .field.valid input,
-	form .field.valid select {
+  form .field select:focus,
+  form .field.valid input,
+  form .field.valid select {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
   --tw-border-opacity: 1;
   border-color: rgb(134 183 254 / var(--tw-border-opacity));
@@ -1557,34 +1557,34 @@ form p a:active {
 
 @-webkit-keyframes shake {
   0%,
-		100% {
+    100% {
     margin-left: 0px;
   }
 
   20%,
-		80% {
+    80% {
     margin-left: -12px;
   }
 
   40%,
-		60% {
+    60% {
     margin-left: 12px;
   }
 }
 
 @keyframes shake {
   0%,
-		100% {
+    100% {
     margin-left: 0px;
   }
 
   20%,
-		80% {
+    80% {
     margin-left: -12px;
   }
 
   40%,
-		60% {
+    60% {
     margin-left: 12px;
   }
 }
@@ -1785,9 +1785,9 @@ form p a:active {
 }
 
 #transaction-form .field input:focus,
-	#transaction-form .field select:focus,
-	#transaction-form .field.valid input,
-	#transaction-form .field.valid select {
+  #transaction-form .field select:focus,
+  #transaction-form .field.valid input,
+  #transaction-form .field.valid select {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
   --tw-border-opacity: 1;
   border-color: rgb(134 183 254 / var(--tw-border-opacity));
@@ -1800,9 +1800,9 @@ form p a:active {
 }
 
 #transaction-form .field.shake input,
-	#transaction-form .field.shake select,
-	#transaction-form .field.error input:focus,
-	#transaction-form .field.error select:focus {
+  #transaction-form .field.shake select,
+  #transaction-form .field.error input:focus,
+  #transaction-form .field.error select:focus {
   box-shadow: 0 0 0 0.25rem rgba(244, 16, 16, 0.407);
   --tw-border-opacity: 1;
   border-color: rgb(247 88 66 / var(--tw-border-opacity));
@@ -1884,7 +1884,7 @@ form p a:active {
 }
 
 .notification-message::before,
-	.error-notification-message::before {
+  .error-notification-message::before {
   position: absolute;
   content: "";
   left: 0px;
@@ -1942,7 +1942,7 @@ form p a:active {
 }
 
 .notification-message.active,
-	.error-notification-message.active {
+  .error-notification-message.active {
   -webkit-animation: animateToast 4.5s linear forwards;
           animation: animateToast 4.5s linear forwards;
   opacity: 1;
