@@ -56,12 +56,12 @@ const signUp = (event) => {
   };
 
   setTimeout(() => {
-    fField.classList.remove("shake", "error");
-    lField.classList.remove("shake", "error");
-    eField.classList.remove("shake", "error");
-    pField.classList.remove("shake", "error");
-    cField.classList.remove("shake", "error");
-  }, 1500);
+    fField.classList.remove("shake");
+    lField.classList.remove("shake");
+    eField.classList.remove("shake");
+    pField.classList.remove("shake");
+    cField.classList.remove("shake");
+  }, 600);
 
   if (
     !fField.classList.contains("error") &&
