@@ -1435,6 +1435,9 @@ form .field.shake .error, form .field.error .error, form .field.valid .valid {
 }
 
 .field .error-txt {
+  margin-top: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(220 53 69 / var(--tw-text-opacity));
@@ -2188,10 +2191,6 @@ form p a:active {
   width: 100%;
 }
 
-.w-16 {
-  width: 4rem;
-}
-
 .min-w-full {
   min-width: 100%;
 }
@@ -2215,10 +2214,6 @@ form p a:active {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-col {
@@ -2257,12 +2252,12 @@ form p a:active {
   gap: 1rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .space-y-10 > :not([hidden]) ~ :not([hidden]) {
@@ -2281,18 +2276,6 @@ form p a:active {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .text-ellipsis {
@@ -2375,11 +2358,6 @@ form p a:active {
   padding-right: 1.25rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2451,10 +2429,6 @@ form p a:active {
 
 .font-extrabold {
   font-weight: 800;
-}
-
-.leading-\[3\.5rem\] {
-  line-height: 3.5rem;
 }
 
 .text-gray-800 {
@@ -2580,10 +2554,6 @@ form p a:active {
 }
 
 @media (min-width: 480px) {
-  .xs\:hidden {
-    display: none;
-  }
-
   .xs\:max-w-screen-xs {
     max-width:  480px;
   }
@@ -2593,10 +2563,6 @@ form p a:active {
   .sm\:my-10 {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
-  }
-
-  .sm\:hidden {
-    display: none;
   }
 
   .sm\:max-w-screen-sm {
@@ -2622,10 +2588,6 @@ form p a:active {
     max-width: 768px;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -2644,18 +2606,6 @@ form p a:active {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1rem * var(--tw-space-x-reverse));
-    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-  }
-
   .md\:bg-none {
     background-image: none;
   }
@@ -2668,10 +2618,6 @@ form p a:active {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
-
-  .md\:leading-\[3\.5rem\] {
-    line-height: 3.5rem;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -2681,10 +2627,6 @@ form p a:active {
 
   .lg\:mt-0 {
     margin-top: 0px;
-  }
-
-  .lg\:mt-8 {
-    margin-top: 2rem;
   }
 
   .lg\:flex {
