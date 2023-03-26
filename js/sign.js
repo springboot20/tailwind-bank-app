@@ -110,13 +110,13 @@ form.addEventListener("submit", (event) => {
  * @param {*} userField
  */
 const checkUsernameHandler = (usernameInput, userField) => {
-  if (usernameInput.value.length < 8) {
+  if (usernameInput.value.length < 7) {
     userField.classList.add("error");
     userField.classList.remove("valid");
 
     let errorTxt = userField.querySelector(".error-txt");
     usernameInput.value != ""
-      ? (errorTxt.textContent = "name input should not less than six")
+      ? (errorTxt.textContent = "name input should not less than 7")
       : (errorTxt.textContent = "name input cannot be blanked");
   } else {
     userField.classList.remove("error");
