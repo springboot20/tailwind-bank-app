@@ -602,6 +602,7 @@ body {
   position: fixed;
   top: 0px;
   z-index: 40;
+  height: 100%;
   --tw-translate-x: -200%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   flex-direction: column;
@@ -636,16 +637,9 @@ body {
 
 @media (min-width: 1024px) {
   .navigation {
-    min-height: 100%;
     --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
-}
-
-.navigation {
-  transition: all 600ms ease;
-  display: flex;
-  flex-direction: column;
 }
 
 .navigation .show-icon {
@@ -705,7 +699,7 @@ body {
 
 .navigation .menu-bar {
   display: flex;
-  min-height: calc(100% - 50px);
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 2rem;
