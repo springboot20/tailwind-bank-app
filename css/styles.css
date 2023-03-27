@@ -2519,6 +2519,10 @@ form p a:active {
     margin-right: auto;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:h-auto {
     height: auto;
   }
@@ -2644,12 +2648,20 @@ form p a:active {
 }
 
 @media (min-width: 1280px) {
+  .xl\:hidden {
+    display: none;
+  }
+
   .xl\:max-w-screen-xl {
     max-width: 1280px;
   }
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:hidden {
+    display: none;
+  }
+
   .\32xl\:max-w-screen-2xl {
     max-width: 1536px;
   }
