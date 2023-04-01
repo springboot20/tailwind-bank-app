@@ -2147,6 +2147,10 @@ form p a:active {
   max-width: 100%;
 }
 
+.max-w-screen-md {
+  max-width: 768px;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
