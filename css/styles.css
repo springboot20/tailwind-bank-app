@@ -2519,10 +2519,6 @@ form p a:active {
     margin-right: auto;
   }
 
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:h-auto {
     height: auto;
   }
