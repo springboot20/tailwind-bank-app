@@ -692,10 +692,11 @@ body {
 .navigation {
   position: fixed;
   top: 0px;
+  left: 0px;
   z-index: 40;
   height: 100%;
-  --tw-translate-x: -200%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-translate-x: -200% !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
   flex-direction: column;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -718,11 +719,9 @@ body {
 
 @media (min-width: 768px) {
   .navigation {
-    top: 0px;
-    left: 0px;
     width: 7rem;
-    --tw-translate-x: 0px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-translate-x: 0px !important;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
   }
 }
 
@@ -767,8 +766,14 @@ body {
 .navigation.open {
   transition: all 600ms ease;
   width: 385px;
-  --tw-translate-x: -0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-translate-x: -0px !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+@media (min-width: 768px) {
+  .navigation.open {
+    width: 345px;
+  }
 }
 
 .navigation .nav-item button.btn {
@@ -1242,8 +1247,8 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
 
   .navigation.open ~ main.main-section {
     position: absolute;
-    left: 385px;
-    width: calc(100% - 385px);
+    left: 345px;
+    width: calc(100% - 345px);
   }
 }
 
@@ -1275,8 +1280,8 @@ ul.nav-menu li.nav-item .search-box span.search-icon {
   }
 
   .navigation.open ~ main.main-section .app-navigation {
-    left: 385px;
-    width: calc(100% - 385px);
+    left: 335px;
+    width: calc(100% - 335px);
   }
 }
 
